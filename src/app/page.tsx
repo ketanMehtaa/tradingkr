@@ -11,6 +11,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import IntradayTradingInsights from './sebiJuly2024';
 
 export default function Home() {
   const { setTheme } = useTheme();
@@ -31,6 +32,9 @@ export default function Home() {
           <DropdownMenuItem onClick={() => setTheme('system')}>System</DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
+      <div className="container mx-auto p-4">
+        <IntradayTradingInsights />
+      </div>
     </>
   );
 }
