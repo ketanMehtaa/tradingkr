@@ -98,13 +98,14 @@ const IntradayTradingInsights = () => {
           <li><strong>Impact on Losses:</strong> Trading costs exacerbated losses by 57% for loss-makers, while profit-makers saw 19% of their profits consumed by trading costs.</li>
           <li><strong>Frequent Traders:</strong> Those trading very frequently faced higher trading costs, impacting their profitability adversely.</li>
         </ul>
+        <a target="_blank" href="https://www.sebi.gov.in/reports-and-statistics/research/jul-2024/study-analysis-of-intraday-trading-by-individuals-in-equity-cash-segment_84946.html" className='underline'>Complete data BSE</a>
       </div>
       <h2 className="text-xl font-bold mb-2">Conclusion</h2>
       <div className="mb-4">
         The study underscores the challenges faced by individual intraday traders in the Indian equity cash segment. The high rate of losses, particularly among young and frequent traders, highlights the need for better education and risk management practices in intraday trading.
       </div>
       <div className="my-8">
-        <Line data={data} options={options} />
+        <Line data={data} />
       </div>
       <div className="mb-4">
         This analysis provides critical insights for market participants and regulators, emphasizing the importance of informed trading strategies and the potential risks associated with high-frequency intraday trading.
