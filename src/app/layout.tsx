@@ -62,7 +62,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn('min-h-screen bg-background font-sans antialiased', fontSans.variable)}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+        {/*  changed defauiltTheme from system to light todokm */}
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
         
           <Header />
           <main className="flex-grow">{children}</main>
