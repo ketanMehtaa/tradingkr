@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Parmeshwar Metal IPO",
+    "issueSize": "Rs 24.74 crores",
+    "freshIssueShares": "40.56 lakh shares",
+    "ipoOpenDate": "January 2, 2025",
+    "ipoCloseDate": "January 6, 2025",
+    "allotmentDate": "January 7, 2025",
+    "listingDate": "January 9, 2025",
+    "listingAt": "BSE SME",
+    "priceBand": "₹57 to ₹61 per share",
+    "lotSize": "2000",
+    "minimumInvestmentRetail": "₹1,22,000",
+    "minimumInvestmentHNI": "₹2,44,000 (2 lots/4,000 shares)",
+    "leadManager": "Beeline Capital Advisors Pvt Ltd",
+    "registrar": "Link Intime India Private Ltd",
+    "marketMaker": "Spread X Securities Private Limited",
+    "faceValue": "₹10 per share",
+    "totalSharesOffered": "40,56,000 shares",
+    "freshIssueAmount": "₹24.74 Cr",
+    "issueType": "Book Built Issue",
+    "preIssueShareHolding": "1,12,50,000 shares",
+    "postIssueShareHolding": "1,53,06,000 shares",
+    "marketMakerPortion": "2,06,000 shares",
+    "qibPortion": "7,70,000 (18.98%)",
+    "niiPortion": "5,78,000 (14.25%)",
+    "riiPortion": "13,48,000 (33.23%)",
+    "anchorInvestorPortion": "11,54,000 (28.45%)",
+    "anchorBidDate": "January 1, 2025",
+    "anchorPortionSize": "Rs 7.04 crore",
+    "anchorLockin30Days": "January 8, 2025",
+    "anchorLockin90Days": "March 9, 2025",
+    "promoters": [
+      "Mr Shantilal Kailashchandra Shah",
+      "Mr Suchitkumar Maheshbhai Patel",
+      "Mr Piyush Giriraj Shah",
+      "Mr Radheshayam Jankilal Shah",
+      "Mr Parth Maheshbhai Patel",
+      "Mr Pratik Radheshyam Shah",
+      "Mrs Kailashben Radheshyam Shah"
+    ],
+    "preIssuePromoterHolding": "96.33%",
+    "postIssuePromoterHolding": "70.81%",
+    "about": "Incorporated in August 2016, Parmeshwar Metal Limited manufactures copper wire and rods by recycling copper scrap. The company's manufacturing unit is situated in Dehgam, Gujarat. The company is an ISO 9001:2015 certified business offering a product portfolio of 1.6 mm, 8 mm, and 12.5 mm copper wire rods, each tailored to meet customer specifications. The company's products are used in various industries such as power cables, building wires, transformers, the automotive industry, household cables as well as bare and enamelled wires. As of December 31, 2023 the company employees a total 89 Employees.",
+    "revenueFY24": "1,10,246.35 Lakhs",
+    "revenueFY23": "97,270.61 Lakhs",
+    "profitAfterTaxFY24": "721.93 Lakhs",
+    "profitAfterTaxFY23": "889.53 Lakhs",
+    "subscriptionStatus": {
+      "categories": [
+        {
+          "investorCategory": "Anchor Investors",
+          "subscriptionTimes": "1",
+          "sharesOffered": "11,54,000",
+          "sharesBidFor": "11,54,000",
+          "totalAmountCr": "7.04",
+          "totalApplications": "-"
+        },
+        {
+          "investorCategory": "Market Maker",
+          "subscriptionTimes": "1",
+          "sharesOffered": "2,06,000",
+          "sharesBidFor": "2,06,000",
+          "totalAmountCr": "1.26",
+          "totalApplications": "-"
+        },
+        {
+          "investorCategory": "Qualified Institutions",
+          "subscriptionTimes": "0.98",
+          "sharesOffered": "7,70,000",
+          "sharesBidFor": "7,54,000",
+          "totalAmountCr": "4.60",
+          "totalApplications": "5"
+        },
+        {
+          "investorCategory": "Non-Institutional Buyers",
+          "subscriptionTimes": "29.76",
+          "sharesOffered": "5,78,000",
+          "sharesBidFor": "1,72,00,000",
+          "totalAmountCr": "104.92",
+          "totalApplications": "2,681"
+        },
+        {
+          "investorCategory": "Retail Investors",
+          "subscriptionTimes": "76.86",
+          "sharesOffered": "13,48,000",
+          "sharesBidFor": "10,36,12,000",
+          "totalAmountCr": "632.03",
+          "totalApplications": "51,819"
+        },
+        {
+          "investorCategory": "Total",
+          "subscriptionTimes": "45.09",
+          "sharesOffered": "26,96,000",
+          "sharesBidFor": "12,15,66,000",
+          "totalAmountCr": "741.55",
+          "totalApplications": "70,185"
+        }
+      ]
+    }
+  }
+]

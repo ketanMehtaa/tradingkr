@@ -12,13 +12,14 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import IntradayTradingInsights from './sebiJuly2024';
+import IPODashboard from './ipo';
+import IPOComponent from './mainIpoDetail';
 
 export default function Home() {
   const { setTheme } = useTheme();
-
   return (
     <>
-      <DropdownMenu>
+      {/* <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="outline" size="icon">
             <SunIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
@@ -31,9 +32,11 @@ export default function Home() {
           <DropdownMenuItem onClick={() => setTheme('dark')}>Dark</DropdownMenuItem>
           <DropdownMenuItem onClick={() => setTheme('system')}>System</DropdownMenuItem>
         </DropdownMenuContent>
-      </DropdownMenu>
-      <div className="container mx-auto p-4">
-        <IntradayTradingInsights />
+      </DropdownMenu> */}
+      <div className=" ">
+        {/* <IntradayTradingInsights /> */}
+        <IPODashboard />
+        {/* <IPOComponent /> */}
       </div>
     </>
   );
