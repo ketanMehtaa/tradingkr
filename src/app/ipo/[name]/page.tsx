@@ -3,15 +3,14 @@ import { Card, CardHeader, CardTitle, CardContent, CardDescription } from '@/com
 import { ArrowUpRight, Calendar, Users, IndianRupee, Percent } from 'lucide-react';
 import ipodata from '../../sme.json'; // Import your JSON data
 
-const IPOComponent = ({params}) => {
+const IPOComponent = ({ params }: { params: any }) => {
   // Sample data from the JSON
-  const {name} = params;
-  const decodedName = decodeURIComponent(name);  // Manually decode if needed
-  console.log("Decoded name:", decodedName);
+  const { name } = params;
+  const decodedName = decodeURIComponent(name); // Manually decode if needed
+  console.log('Decoded name:', decodedName);
 
-//   const ipoData? = ipodata?[0];
+  //   const ipoData? = ipodata?[0];
   const ipoData = ipodata.find((ipo) => ipo.name === decodedName);
-
 
   return (
     <div className="container mx-auto px-4 py-8">

@@ -1042,7 +1042,7 @@ const IPODashboard = () => {
                         <td className="px-2 py-1 md:px-6 md:py-3">{ipo.opens}</td>
                         <td className="px-2 py-1 md:px-6 md:py-3">{ipo.closes}</td>
                         <td className="px-2 py-1 md:px-6 md:py-3">{ipo?.gmp}</td>
-                        <td className="px-2 py-1 md:px-6 md:py-3">{ipo?.subscription}</td>
+                        {/* <td className="px-2 py-1 md:px-6 md:py-3">{ipo?.subscription}</td> */}
                       </tr>
                     ))}
                   </tbody>
@@ -1102,7 +1102,7 @@ const IPODashboard = () => {
                         <td className="px-2 py-1 md:px-6 md:py-3">{ipo.ipoOpenDate}</td>
                         <td className="px-2 py-1 md:px-6 md:py-3">{ipo.ipoCloseDate}</td>
                         <td className="px-2 py-1 md:px-6 md:py-3">{ipo?.gmp}</td>
-                        <td className="px-2 py-1 md:px-6 md:py-3">{ipo?.subscription}</td>
+                        <td className="px-2 py-1 md:px-6 md:py-3">{ipo?.subscriptionStatus?.categories[4]?.subscriptionTimes}</td>
                       </tr>
                     ))}
                   </tbody>
