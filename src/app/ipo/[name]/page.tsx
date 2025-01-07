@@ -162,8 +162,8 @@ const IPOComponent = ({ params }: { params: any }) => {
             </CardHeader>
             <CardContent>
               <div className="overflow-x-auto">
-                <table className="w-full text-sm text-left">
-                  <thead className="text-xs uppercase bg-gray-100">
+                <table className="w-full text-sm text-left border">
+                  <thead className="text-xs uppercase bg-gray-100 ">
                     <tr>
                       <th className="py-2 px-4 font-medium">Category</th>
                       <th className="py-2 px-4 font-medium text-right">Shares Offered</th>
