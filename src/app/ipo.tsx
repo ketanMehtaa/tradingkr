@@ -1051,6 +1051,7 @@ const IPODashboard = () => {
             </CardContent>
           </Card>
         </TabsContent>
+
         <TabsContent value="SME">
           <Card>
             <CardHeader>
@@ -1071,7 +1072,7 @@ const IPODashboard = () => {
                         Lot Size
                       </th>
                       <th scope="col" className="px-2 py-1 md:px-6 md:py-3 font-medium">
-                        Issue Size(cr)
+                        Issue Size (Cr)
                       </th>
                       <th scope="col" className="px-2 py-1 md:px-6 md:py-3 font-medium">
                         Opens
@@ -1080,7 +1081,7 @@ const IPODashboard = () => {
                         Closes
                       </th>
                       <th scope="col" className="px-2 py-1 md:px-6 md:py-3 font-medium">
-                        Gmp %
+                        GMP %
                       </th>
                       <th scope="col" className="px-2 py-1 md:px-6 md:py-3 font-medium">
                         Subscription %
@@ -1091,9 +1092,8 @@ const IPODashboard = () => {
                     {SmeIpo.map((ipo) => (
                       <tr key={ipo.name} className="bg-white border-b hover:bg-gray-50">
                         <td className="px-2 py-1 md:px-6 md:py-3 font-medium">
-                          <Link href={`/ipo/${ipo.name}`}>
-                            {/* <a>{ipo.name}</a */}
-                          {ipo.name}
+                          <Link href={`/ipo/${encodeURIComponent(ipo.name)}`}>
+                            <span className="cursor-pointer">{ipo.name}</span>
                           </Link>
                         </td>
                         <td className="px-2 py-1 md:px-6 md:py-3">{ipo.priceBand}</td>
@@ -1101,8 +1101,14 @@ const IPODashboard = () => {
                         <td className="px-2 py-1 md:px-6 md:py-3">{ipo.issueSize}</td>
                         <td className="px-2 py-1 md:px-6 md:py-3">{ipo.ipoOpenDate}</td>
                         <td className="px-2 py-1 md:px-6 md:py-3">{ipo.ipoCloseDate}</td>
-                        <td className="px-2 py-1 md:px-6 md:py-3">{ipo?.gmp}</td>
-                        <td className="px-2 py-1 md:px-6 md:py-3">{ipo?.subscriptionStatus?.categories[4]?.subscriptionTimes}</td>
+                        <td className="px-2 py-1 md:px-6 md:py-3">{ipo.gmp || '-'}</td>
+                        <td className="px-2 py-1 md:px-6 md:py-3">
+                          {ipo.subscriptionStatus?.categories && ipo.subscriptionStatus.categories.length > 0
+                            ? ipo.subscriptionStatus.categories.find(
+                                (category) => category.investorCategory === 'Total'
+                              )?.subscriptionTimes || '-'
+                            : '-'}
+                        </td>
                       </tr>
                     ))}
                   </tbody>
