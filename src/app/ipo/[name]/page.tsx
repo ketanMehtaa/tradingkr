@@ -139,7 +139,7 @@ const IPOComponent = ({ params }: { params: any }) => {
           </CardContent>
         </Card>
         {/* -----------------------------------------------------------------------------------Financial Performance */}
-        {(ipoData.revenueFY24 || ipoData.revenueFY23 || ipoData.profitAfterTaxFY24 || ipoData.profitAfterTaxFY23) && (
+        {/* {(ipoData.revenueFY24 || ipoData.revenueFY23 || ipoData.profitAfterTaxFY24 || ipoData.profitAfterTaxFY23) && (
           <Card className="mb-6 bg-slate-50 shadow-md rounded-lg ">
             <CardHeader>
               <CardTitle>Financial Performance</CardTitle>
@@ -153,7 +153,7 @@ const IPOComponent = ({ params }: { params: any }) => {
               })}
             </CardContent>
           </Card>
-        )}
+        )} */}
         {/* ----------------------------------------------------------------------------------Subscription Status */}
         {ipoData.subscriptionStatus && (
           <Card className="mb-6 bg-slate-50 shadow-md rounded-lg ">
@@ -189,7 +189,7 @@ const IPOComponent = ({ params }: { params: any }) => {
           </Card>
         )}
         {/* -----------------------------------------------------------------------------------Timeline */}
-        <Card className="mb-6 bg-slate-50 shadow-md rounded-lg ">
+        {/* <Card className="mb-6 bg-slate-50 shadow-md rounded-lg ">
           <CardHeader>
             <CardTitle>Timeline</CardTitle>
           </CardHeader>
@@ -201,7 +201,7 @@ const IPOComponent = ({ params }: { params: any }) => {
               'Anchor Bid Date': ipoData.anchorBidDate,
             })}
           </CardContent>
-        </Card>
+        </Card> */}
         {/* --------------------------------------------------------------------------------------GMP & Subscription */}
         <Card className="mb-6 bg-slate-50 shadow-md rounded-lg ">
           <CardHeader>

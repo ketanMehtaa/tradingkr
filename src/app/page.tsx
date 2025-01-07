@@ -13,7 +13,7 @@ import {
 } from '@/components/ui/dropdown-menu';
 import IntradayTradingInsights from './sebiJuly2024';
 import IPODashboard from './ipo';
-import IPOComponent from './mainIpoDetail';
+// import IPOComponent from './mainIpoDetail';
 
 export default function Home() {
   const { setTheme } = useTheme();
