@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Header } from './header';
 import { Footer } from './footer';
+import { CSPostHogProvider } from './providers';
 
 const fontSans = FontSans({
   subsets: ['latin'],
@@ -61,15 +62,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn('min-h-screen bg-background font-sans antialiased', fontSans.variable)}>
-        {/*  changed defauiltTheme from system to light todokm */}
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-        
-          <Header />
-          <main className="flex-grow">{children}</main>
-          <Footer />
-        </ThemeProvider>
-      </body>
+      <CSPostHogProvider>
+        <body className={cn('min-h-screen bg-background font-sans antialiased', fontSans.variable)}>
+          {/*  changed defauiltTheme from system to light todokm */}
+          <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+            <Header />
+            <main className="flex-grow">{children}</main>
+            <Footer />
+          </ThemeProvider>
+        </body>
+      </CSPostHogProvider>
     </html>
   );
 }
