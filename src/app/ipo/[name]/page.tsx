@@ -1,11 +1,15 @@
 import React from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import ipodata from '../../sme.json'; // Import your JSON data
+import SocialShare from '@/app/socialShare';
+import ShareButtons from '@/app/socialShare';
 
 const IPOComponent = ({ params }: { params: any }) => {
   const { name } = params;
   const decodedName = decodeURIComponent(name);
   const ipoData = ipodata.find((ipo) => ipo.name === decodedName);
+
+  const currentUrl = typeof window !== 'undefined' ? window.location.href : '';
 
   if (!ipoData) {
     return <div className="container mx-auto px-4 py-8">IPO data not found for {decodedName}</div>;
@@ -40,6 +44,9 @@ const IPOComponent = ({ params }: { params: any }) => {
         <h1 className="text-2xl md:text-3xl font-bold mb-2">{ipoData.name}</h1>
         {/* <p className="text-gray-600">{ipoData.listingAt}</p> */}
       </div>
+      {/* <SocialShare ipoName={ipoData.name} url={window.location.href} /> */}
+      <ShareButtons url={currentUrl} title={`${ipoData.name} IPO Details`} />
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Responsive grid */}
         {/* ------------------------------------------------------------------------------Basic Details */}
