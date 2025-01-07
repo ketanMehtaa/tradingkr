@@ -41,12 +41,13 @@ const IPOComponent = ({ params }: { params: any }) => {
     <div className="container mx-auto px-4 py-8">
       {/* Header Section */}
       <div className="mb-8">
-        <h1 className="text-2xl md:text-3xl font-bold mb-2">{ipoData.name}</h1>
+        <h1 className="text-2xl md:text-3xl font-bold mb-2 pl-3">{ipoData.name}</h1>
         {/* <p className="text-gray-600">{ipoData.listingAt}</p> */}
       </div>
       {/* <SocialShare ipoName={ipoData.name} url={window.location.href} /> */}
-      <ShareButtons />
-
+      <div className="fixed bottom-5 left-1/2 -translate-x-1/2 bg-white p-4 rounded-lg shadow-md z-50">
+        <ShareButtons />
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Responsive grid */}
         {/* ------------------------------------------------------------------------------Basic Details */}
