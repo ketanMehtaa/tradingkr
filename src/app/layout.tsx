@@ -6,6 +6,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 import { Header } from './header';
 import { Footer } from './footer';
 import { CSPostHogProvider } from './providers';
+import { Toaster } from '@/components/ui/toaster';
 
 const fontSans = FontSans({
   subsets: ['latin'],
@@ -68,6 +69,7 @@ export default function RootLayout({
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
             <Header />
             <main className="flex-grow">{children}</main>
+            <Toaster />
             <Footer />
           </ThemeProvider>
         </body>
