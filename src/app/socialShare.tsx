@@ -2,42 +2,33 @@
 import React, { useState } from 'react';
 import { Facebook, Twitter, Linkedin, Mail, Link2, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Toast } from '@/components/ui/toast';
-// import { toast } from '@/components/ui/use-toast';
 
-interface ShareButtonsProps {
-  url: string;
-  title: string;
-}
-
-const ShareButtons: React.FC<ShareButtonsProps> = ({ url, title }) => {
+const ShareButtons: React.FC = () => {
   const [copying, setCopying] = useState(false);
-  const encodedUrl = encodeURIComponent(url);
-  const encodedTitle = encodeURIComponent(title);
+  
+  // Get current page URL and title
+  const currentUrl = typeof window !== 'undefined' ? window.location.href : '';
+  const currentTitle = typeof window !== 'undefined' ? document.title : 'Check out this IPO';
+  
+  const encodedUrl = encodeURIComponent(currentUrl);
+  const encodedTitle = encodeURIComponent(currentTitle);
 
   const shareLinks = {
     facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
     twitter: `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`,
     linkedin: `https://www.linkedin.com/shareArticle?mini=true&url=${encodedUrl}&title=${encodedTitle}`,
-    whatsapp: `https://wa.me/?text=${encodedTitle}%20${encodedUrl}`,
+    whatsapp: `https://api.whatsapp.com/send?text=${encodedTitle}%20${encodedUrl}`, // Updated WhatsApp link
     telegram: `https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}`,
-    email: `mailto:?subject=${encodedTitle}&body=Check%20out%20this%20link:%20${encodedUrl}`,
+    email: `mailto:?subject=${encodedTitle}&body=Check%20out%20this%20IPO:%20${encodedUrl}`,
   };
 
   const copyToClipboard = async () => {
     try {
       setCopying(true);
-      await navigator.clipboard.writeText(url);
-      Toast({
-        title: 'Success',
-        // description: 'Link copied to clipboard!',
-      });
+      await navigator.clipboard.writeText(currentUrl);
+      alert('Link copied to clipboard!'); // Simple alert for feedback
     } catch (err) {
-        Toast({
-        title: 'Error',
-        // description: 'Failed to copy link',
-        variant: 'destructive',
-      });
+      alert('Failed to copy link');
     } finally {
       setCopying(false);
     }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import ipodata from '../../sme.json'; // Import your JSON data
-import SocialShare from '@/app/socialShare';
+// import SocialShare from '@/app/socialShare';
 import ShareButtons from '@/app/socialShare';
 
 const IPOComponent = ({ params }: { params: any }) => {
@@ -45,7 +45,7 @@ const IPOComponent = ({ params }: { params: any }) => {
         {/* <p className="text-gray-600">{ipoData.listingAt}</p> */}
       </div>
       {/* <SocialShare ipoName={ipoData.name} url={window.location.href} /> */}
-      <ShareButtons url={currentUrl} title={`${ipoData.name} IPO Details`} />
+      <ShareButtons />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Responsive grid */}
