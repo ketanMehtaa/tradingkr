@@ -3,6 +3,7 @@ import React from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'; // Replace with your actual UI library
 import ipoData from '../../mainBoardIpo.json'; // Update path if needed
 import { IPOData } from '@/app/mainIpoInterface';
+import ShareButtons from '@/app/socialShare';
 
 const IPOComponent = ({ params }: { params: { name: string } }) => {
   const { name } = params;
@@ -59,6 +60,9 @@ const IPOComponent = ({ params }: { params: { name: string } }) => {
       <h1 className="text-3xl font-bold mb-4">{ipo.ipoName}</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
+        <div className="fixed bottom-5 left-1/2 -translate-x-1/2 bg-white p-4 rounded-lg shadow-md z-50">
+          <ShareButtons />
+        </div>
         {/*------------------------------------------------------------- Basic Details */}
         <Card className="mb-6 bg-white shadow-md rounded-lg ">
           <CardHeader>
@@ -275,50 +279,62 @@ const IPOComponent = ({ params }: { params: { name: string } }) => {
         </Card>
 
         <Card className="mb-6 bg-white shadow-md rounded-lg ">
-  <CardHeader>
-    <CardTitle>Financial Data</CardTitle>
-  </CardHeader>
-  <CardContent>
-    <div className="overflow-x-auto">
-      <table className="w-full text-sm text-left border border-collapse"> {/* Added border-collapse */}
-        <thead className="text-xs uppercase bg-gray-100 border-b">
-          <tr>
-            <th className="py-2 px-4 font-medium border border-gray-300">Metric</th>
-            {ipo.financials.financialsByDate.map((data: any) => (
-              <th key={data.date} className="py-2 px-4 font-medium border border-gray-300 text-right">{data.date}</th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td className="py-2 px-4 font-medium border border-gray-300">Revenue (₹ Cr)</td>
-            {ipo.financials.financialsByDate.map((data: any) => (
-              <td key={data.date} className="py-2 px-4 border border-gray-300 text-right">{data.revenue.toFixed(2)}</td>
-            ))}
-          </tr>
-          <tr>
-            <td className="py-2 px-4 font-medium border border-gray-300">Profit After Tax (₹ Cr)</td>
-            {ipo.financials.financialsByDate.map((data: any) => (
-              <td key={data.date} className="py-2 px-4 border border-gray-300 text-right">{data.profitAfterTax.toFixed(2)}</td>
-            ))}
-          </tr>
-          <tr>
-            <td className="py-2 px-4 font-medium border border-gray-300">Net Worth (₹ Cr)</td>
-            {ipo.financials.financialsByDate.map((data: any) => (
-              <td key={data.date} className="py-2 px-4 border border-gray-300 text-right">{data.netWorth.toFixed(2)}</td>
-            ))}
-          </tr>
-          <tr>
-            <td className="py-2 px-4 font-medium border border-gray-300">Total Borrowing (₹ Cr)</td>
-            {ipo.financials.financialsByDate.map((data: any) => (
-              <td key={data.date} className="py-2 px-4 border border-gray-300 text-right">{data.totalBorrowing.toFixed(2)}</td>
-            ))}
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </CardContent>
-</Card>
+          <CardHeader>
+            <CardTitle>Financial Data</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm text-left border border-collapse">
+                {' '}
+                {/* Added border-collapse */}
+                <thead className="text-xs uppercase bg-gray-100 border-b">
+                  <tr>
+                    <th className="py-2 px-4 font-medium border border-gray-300">Metric</th>
+                    {ipo.financials.financialsByDate.map((data: any) => (
+                      <th key={data.date} className="py-2 px-4 font-medium border border-gray-300 text-right">
+                        {data.date}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="py-2 px-4 font-medium border border-gray-300">Revenue (₹ Cr)</td>
+                    {ipo.financials.financialsByDate.map((data: any) => (
+                      <td key={data.date} className="py-2 px-4 border border-gray-300 text-right">
+                        {data.revenue.toFixed(2)}
+                      </td>
+                    ))}
+                  </tr>
+                  <tr>
+                    <td className="py-2 px-4 font-medium border border-gray-300">Profit After Tax (₹ Cr)</td>
+                    {ipo.financials.financialsByDate.map((data: any) => (
+                      <td key={data.date} className="py-2 px-4 border border-gray-300 text-right">
+                        {data.profitAfterTax.toFixed(2)}
+                      </td>
+                    ))}
+                  </tr>
+                  <tr>
+                    <td className="py-2 px-4 font-medium border border-gray-300">Net Worth (₹ Cr)</td>
+                    {ipo.financials.financialsByDate.map((data: any) => (
+                      <td key={data.date} className="py-2 px-4 border border-gray-300 text-right">
+                        {data.netWorth.toFixed(2)}
+                      </td>
+                    ))}
+                  </tr>
+                  <tr>
+                    <td className="py-2 px-4 font-medium border border-gray-300">Total Borrowing (₹ Cr)</td>
+                    {ipo.financials.financialsByDate.map((data: any) => (
+                      <td key={data.date} className="py-2 px-4 border border-gray-300 text-right">
+                        {data.totalBorrowing.toFixed(2)}
+                      </td>
+                    ))}
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </CardContent>
+        </Card>
 
         {/*------------------------------------------------------------- Key People */}
         <Card className="mb-6 bg-white shadow-md rounded-lg ">
