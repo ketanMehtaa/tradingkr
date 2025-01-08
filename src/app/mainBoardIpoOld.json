@@ -1,0 +1,242 @@
+[
+  {
+    "name": "Capital Infra Trust InvIT",
+    "issueSize": "Rs 1,578.00 crores",
+    "freshIssueShares": "10.77 crore shares",
+    "freshIssueAmount": "₹1,077.00 Cr",
+    "offerForSaleShares": "5.01 crore shares",
+    "offerForSaleAmount": "₹501.00 Cr",
+    "ipoOpenDate": "January 7, 2025",
+    "ipoCloseDate": "January 9, 2025",
+    "allotmentDate": "January 10, 2025",
+    "listingDate": "January 14, 2025",
+    "listingAt": "BSE, NSE",
+    "priceBand": "₹99 to 100 per share",
+    "lotSize": "150 Shares",
+    "minimumInvestmentRetail": "₹15,000",
+    "minimumInvestmentSNII": "₹2,10,000",
+    "minimumInvestmentBNII": "₹10,05,000",
+    "leadManagers": ["SBI Capital Markets Limited", "HDFC Bank Limited"],
+    "registrar": "Kfin Technologies Limited",
+    "faceValue": "-",
+    "totalSharesOffered": "15,78,00,000 shares",
+    "issueType": "Book Built Issue InvIT",
+    "preIssueShareHolding": "-",
+    "postIssueShareHolding": "-",
+    "qibPortion": "Not more than 75% of the Offer",
+    "niiPortion": "Not less than 25% of the Offer",
+    "riiPortion": "-",
+    "anchorInvestorPortion": "7,10,10,000 shares",
+    "anchorBidDate": "January 6, 2025",
+    "anchorPortionSize": "710.10 Cr",
+    "anchorLockin30Days": "February 9, 2025",
+    "anchorLockin90Days": "April 10, 2025",
+    "promoters": "-",
+    "preIssuePromoterHolding": "-",
+    "postIssuePromoterHolding": "-",
+    "about": "Established in September 2023, Capital Infra Trust is an infrastructure investment trust sponsored by Gawar Construction Limited. The InvIT was established to engage in activities and make investments as an infrastructure investment trust, as allowed under the SEBI InvIT Regulations.",
+    "sponsorInfo": "The sponsoring company specializes in constructing road and highway projects across 19 states in India for various government bodies, including the NHAI, MORTH, MMRDA, and CPWD.",
+    "portfolioInfo": "As of December 2024, the sponsor company's portfolio of 26 road projects on a hybrid annuity mode (\"HAM\") with NHAI, of which 11 are completed projects, including the five acquired assets which Sadbhav Infrastructure Project Limited erstwhile owned, and 15 under-construction projects.",
+    "rating": "Provisional CRISIL AAA/Stable (Assigned)",
+    "ratingDate": "November 11, 2024",
+    "ratingInstruments": ["Trust NCD(s)", "proposed long-term bank loan facility"],
+    "upiMandateConfirmationCutoffTime": "5 PM on January 9, 2025",
+    "refundsInitiationDate": "January 13, 2025",
+    "creditOfSharesToDemat": "January 13, 2025",
+    "lotSizeDetails": [
+      {
+        "category": "Retail (Min)",
+        "lots": 1,
+        "shares": 150,
+        "amount": "₹15,000"
+      },
+      {
+        "category": "Retail (Max)",
+        "lots": 13,
+        "shares": 1950,
+        "amount": "₹1,95,000"
+      },
+      {
+        "category": "S-HNI (Min)",
+        "lots": 14,
+        "shares": 2100,
+        "amount": "₹2,10,000"
+      },
+      {
+        "category": "S-HNI (Max)",
+        "lots": 66,
+        "shares": 9900,
+        "amount": "₹9,90,000"
+      },
+      {
+        "category": "B-HNI (Min)",
+        "lots": 67,
+        "shares": 10050,
+        "amount": "₹10,05,000"
+      }
+    ],
+    "companyContactDetails": {
+      "name": "Capital Infra Trust",
+      "address": "Unit No. 1401-1403, 14th Floor, Tower B, SAS Tower, Medicity, Sector-38-Gurugram-122001",
+      "phone": "+0124 4920139",
+      "email": "compliance@capitalinfratrust.com",
+      "website": "https://www.capitalinfratrust.com/"
+    },
+    "registrarContactDetails": {
+      "name": "Kfin Technologies Limited",
+      "phone": "04067162222, 04079611000",
+      "email": "nationalinfra.units@kfintech.com",
+      "website": "https://kosmic.kfintech.com/ipostatus/"
+    },
+    "brokerRecommendations": {
+      "subscribe": 3,
+      "neutral": 0,
+      "avoid": 0
+    }
+  },
+  {
+    "name": "Quadrant Future Tek Limited IPO",
+    "gmp": "72.41%",
+    "issueSize": "Rs 290.00 crores",
+    "freshIssueShares": "1.00 crore shares",
+    "freshIssueAmount": "₹290.00 Cr",
+    "offerForSaleShares": "-",
+    "offerForSaleAmount": "-",
+    "ipoOpenDate": "January 7, 2025",
+    "ipoCloseDate": "January 9, 2025",
+    "allotmentDate": "January 10, 2025",
+    "listingDate": "January 14, 2025",
+    "listingAt": "BSE, NSE",
+    "priceBand": "₹275 to ₹290 per share",
+    "lotSize": "50 Shares",
+    "minimumInvestmentRetail": "₹14,500",
+    "minimumInvestmentSNII": "₹2,03,000",
+    "minimumInvestmentBNII": "₹10,00,500",
+    "leadManagers": ["Sundae Capital Advisors"],
+    "registrar": "Link Intime India Private Ltd",
+    "faceValue": "₹10 per share",
+    "totalSharesOffered": "1,00,00,000 shares",
+    "issueType": "Book Built Issue IPO",
+    "preIssueShareHolding": "3,00,00,000 shares",
+    "postIssueShareHolding": "4,00,00,000 shares",
+    "qibPortion": "30,00,000 (30%)",
+    "niiPortion": "15,00,000 (15%)",
+    "riiPortion": "10,00,000 (10%)",
+    "anchorInvestorPortion": "45,00,000 (45%)",
+    "anchorBidDate": "January 6, 2025",
+    "anchorPortionSize": "130.50 Cr",
+    "anchorLockin30Days": "February 2025",
+    "anchorLockin90Days": "-",
+    "promoters": [
+      "Mohit Vohra",
+      "Amit Dhawan",
+      "Amrit Singh Randhawa",
+      "Rupinder Singh",
+      "Vishesh Abrol",
+      "Vivek Abrol",
+      "Aikjot Singh",
+      "Rajbir Singh Randhawa"
+    ],
+    "preIssuePromoterHolding": "93.33%",
+    "postIssuePromoterHolding": "70%",
+    "about": "-",
+    "upiMandateConfirmationCutoffTime": "5 PM on January 9, 2025",
+    "refundsInitiationDate": "January 13, 2025",
+    "creditOfSharesToDemat": "January 13, 2025",
+    "lotSizeDetails": [
+      {
+        "category": "Retail (Min)",
+        "lots": 1,
+        "shares": 50,
+        "amount": "₹14,500"
+      },
+      {
+        "category": "Retail (Max)",
+        "lots": 13,
+        "shares": 650,
+        "amount": "₹1,88,500"
+      },
+      {
+        "category": "S-HNI (Min)",
+        "lots": 14,
+        "shares": 700,
+        "amount": "₹2,03,000"
+      },
+      {
+        "category": "S-HNI (Max)",
+        "lots": 68,
+        "shares": 3400,
+        "amount": "₹9,86,000"
+      },
+      {
+        "category": "B-HNI (Min)",
+        "lots": 69,
+        "shares": 3450,
+        "amount": "₹10,00,500"
+      }
+    ],
+    "companyContactDetails": {
+      "name": "Quadrant Future Tek Limited",
+      "address": "Village Basma Tehsil Banur, Distt Mohali - 140417",
+      "phone": "+91 172 402 0228",
+      "email": "cs_qftl@quadrantfuturetek.com",
+      "website": "https://www.quadrantfuturetek.com/"
+    },
+    "registrarContactDetails": {
+      "name": "Link Intime India Private Ltd",
+      "phone": "+91-22-4918 6270",
+      "email": "quadrant.ipo@linkintime.co.in",
+      "website": "https://linkintime.co.in/Initial_Offer/public-issues.html"
+    },
+    "brokerRecommendations": {
+      "subscribe": 11,
+      "neutral": 0,
+      "avoid": 1
+    },
+    "subscriptionStatus": {
+      "anchor": {
+        "subscriptionTimes": 1,
+        "sharesOffered": "45,00,000",
+        "sharesBidFor": "45,00,000",
+        "totalAmount": "130.500 Cr"
+      },
+      "qib": {
+        "subscriptionTimes": 0.04,
+        "sharesOffered": "30,00,000",
+        "sharesBidFor": "1,09,220",
+        "totalAmount": "3.167 Cr"
+      },
+      "nii": {
+        "subscriptionTimes": 9.76,
+        "sharesOffered": "15,00,000",
+        "sharesBidFor": "1,46,38,692",
+        "totalAmount": "424.522 Cr"
+      },
+      "bNII": {
+        "subscriptionTimes": 8.1,
+        "sharesOffered": "10,00,000",
+        "sharesBidFor": "81,02,850",
+        "totalAmount": "234.983 Cr"
+      },
+      "sNII": {
+        "subscriptionTimes": 13.01,
+        "sharesOffered": "5,00,000",
+        "sharesBidFor": "65,02,500",
+        "totalAmount": "188.572 Cr"
+      },
+      "retail": {
+        "subscriptionTimes": 26.8,
+        "sharesOffered": "10,00,000",
+        "sharesBidFor": "2,68,00,097",
+        "totalAmount": "777.203 Cr"
+      },
+      "total": {
+        "subscriptionTimes": 7.55,
+        "sharesOffered": "55,00,000",
+        "sharesBidFor": "4,15,48,009",
+        "totalAmount": "1,204.892 Cr"
+      }
+    },
+    "totalApplications": "10,57,106"
+  }
+]

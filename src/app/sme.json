@@ -1,12 +1,17 @@
-[
-  {
+{
+  "INDOBELL": {
+    "timeline": {
+      "ipoOpenDate": "January 6, 2025",
+      "ipoCloseDate": "January 8, 2025",
+      "allotmentDate": "January 9, 2025",
+      "creditOfSharesToDemat": "January 10, 2025",
+      "listingDate": "January 13, 2025",
+      "refundsInitiationDate": "January 10, 2025",
+      "upiMandateConfirmationCutoffTime": "5 PM on January 8, 2025"
+    },
     "name": "Indobell Insulation Limited IPO",
     "issueSize": "10.14 Cr",
     "freshIssueShares": "22.05 lakh shares",
-    "ipoOpenDate": "January 6, 2025",
-    "ipoCloseDate": "January 8, 2025",
-    "allotmentDate": "January 9, 2025",
-    "listingDate": "January 13, 2025",
     "listingAt": "BSE SME",
     "priceBand": "₹46 ",
     "faceValue": "₹10 ",
@@ -48,40 +53,52 @@
     },
     "gmp": null,
     "subscriptionStatus": {
-      "categories": [
-        {
-          "investorCategory": "NII",
-          "subscriptionTimes": null,
-          "sharesOffered": "10,47,000",
-          "sharesBidFor": null,
-          "totalAmountCr": null,
-          "totalApplications": null
-        },
-        {
-          "investorCategory": "Retail",
-          "subscriptionTimes": null,
-          "sharesOffered": "10,47,000",
-          "sharesBidFor": null,
-          "totalAmountCr": null,
-          "totalApplications": null
-        },
-        {
-          "investorCategory": "Total",
-          "subscriptionTimes": null,
-          "sharesOffered": "22,05,001",
-          "sharesBidFor": null,
-          "totalAmountCr": null,
-          "totalApplications": null
-        }
-      ]
+      "anchor": {
+        "subscriptionTimes": 1,
+        "sharesOffered": "87,86,809",
+        "sharesBidFor": "87,86,809",
+        "totalAmount": "123.02 Cr"
+      },
+      "qib": {
+        "subscriptionTimes": 4.63,
+        "sharesOffered": "58,57,875",
+        "sharesBidFor": "2,71,38,517",
+        "totalAmount": "379.94 Cr"
+      },
+      "nii": {
+        "subscriptionTimes": 80.35,
+        "sharesOffered": "43,93,405",
+        "sharesBidFor": "35,30,12,474",
+        "totalAmount": "4,942.17 Cr"
+      },
+      "bNII": {
+        "subscriptionTimes": 78.51,
+        "sharesOffered": "29,28,937",
+        "sharesBidFor": "22,99,41,716",
+        "totalAmount": "3,219.18 Cr"
+      },
+      "sNII": {
+        "subscriptionTimes": 84.04,
+        "sharesOffered": "14,64,468",
+        "sharesBidFor": "12,30,70,758",
+        "totalAmount": "1,722.99 Cr"
+      },
+      "retail": {
+        "subscriptionTimes": 33.91,
+        "sharesOffered": "1,02,51,278",
+        "sharesBidFor": "34,76,28,234",
+        "totalAmount": "4,866.80 Cr"
+      },
+      "total": {
+        "subscriptionTimes": 35.5,
+        "sharesOffered": "2,05,02,558",
+        "sharesBidFor": "72,77,79,225",
+        "totalAmount": "10,188.91 Cr"
+      }
     },
-    "timeline": {
-      "upiMandateConfirmationCutoffTime": "5 PM on January 8, 2025",
-      "refundsInitiationDate": "January 10, 2025",
-      "creditOfSharesToDemat": "January 10, 2025"
-    }
+    "totalApplications": "27,18,090"
   },
-  {
+  "DELTIC": {
     "name": "Delta Autocorp Limited IPO",
     "issueSize": "54.60 Cr",
     "freshIssueShares": "38.88 lakh shares",
@@ -167,7 +184,7 @@
       "avoid": "0"
     }
   },
-  {
+  "SATKARTAR": {
     "name": "Sat Kartar Shopping Limited IPO",
     "issueSize": "33.80 Cr",
     "freshIssueShares": "41.73 lakh shares",
@@ -221,7 +238,7 @@
       "creditOfSharesToDemat": "January 16, 2025"
     }
   },
-  {
+  "AVAX": {
     "name": "Avax Apparels And Ornaments Limited IPO",
     "issueSize": "1.92 Cr",
     "freshIssueShares": "2.74 lakh shares",
@@ -277,32 +294,36 @@
     },
     "gmp": null,
     "subscriptionStatus": {
-      "categories": [
-        {
-          "investorCategory": "Retail",
-          "subscriptionTimes": null,
-          "sharesOffered": "50% of the Net Issue",
-          "sharesBidFor": null,
-          "totalAmountCr": null,
-          "totalApplications": null
-        },
-        {
-          "investorCategory": "Other",
-          "subscriptionTimes": null,
-          "sharesOffered": "50% of the Net Issue",
-          "sharesBidFor": null,
-          "totalAmountCr": null,
-          "totalApplications": null
-        },
-        {
-          "investorCategory": "Total",
-          "subscriptionTimes": null,
-          "sharesOffered": "2,74,000",
-          "sharesBidFor": null,
-          "totalAmountCr": null,
-          "totalApplications": null
-        }
-      ]
+      "anchor": {
+        "subscriptionTimes": null,
+        "sharesOffered": "1,11,000",
+        "sharesBidFor": null,
+        "totalAmount": null
+      },
+      "qib": {
+        "subscriptionTimes": null,
+        "sharesOffered": "10,47,000",
+        "sharesBidFor": null,
+        "totalAmount": null
+      },
+      "nii": {
+        "subscriptionTimes": null,
+        "sharesOffered": "10,47,000",
+        "sharesBidFor": null,
+        "totalAmount": null
+      },
+      "retail": {
+        "subscriptionTimes": null,
+        "sharesOffered": "10,47,000",
+        "sharesBidFor": null,
+        "totalAmount": null
+      },
+      "total": {
+        "subscriptionTimes": null,
+        "sharesOffered": "22,05,001",
+        "sharesBidFor": null,
+        "totalAmount": null
+      }
     },
     "timeline": {
       "upiMandateConfirmationCutoffTime": "5 PM on January 9, 2025",
@@ -310,327 +331,5 @@
       "creditOfSharesToDemat": "January 13, 2025"
     },
     "companyWebsite": "https://avaxapparels.com/"
-  },
-  {
-    "name": "Indobell Insulation Limited IPO",
-    "issueSize": "10.14 Cr",
-    "freshIssueShares": "22.05 lakh shares",
-    "ipoOpenDate": "January 6, 2025",
-    "ipoCloseDate": "January 8, 2025",
-    "allotmentDate": "January 9, 2025",
-    "listingDate": "January 13, 2025",
-    "listingAt": "BSE SME",
-    "priceBand": "₹46 ",
-    "faceValue": "₹10 ",
-    "lotSize": 3000,
-    "minimumInvestmentRetail": "₹1,38,000",
-    "minimumInvestmentHNI": "₹2,76,000 (2 lots/6,000 shares)",
-    "issueType": "Fixed Price Issue",
-    "totalSharesOffered": "22,05,000 shares",
-    "freshIssueAmount": "₹10.14 Cr",
-    "preIssueShareHolding": "40,94,952 shares",
-    "postIssueShareHolding": "62,99,952 shares",
-    "promoters": ["Mr. Vijay Burman", "Mr. Man Mohan Burman", "Ms. Megha Burman", "Ms. Raksha Burman"],
-    "preIssuePromoterHolding": "99.99%",
-    "postIssuePromoterHolding": "65.00%",
-    "marketMaker": "Black Fox Financial Private Limited",
-    "marketMakerPortion": "1,11,000 shares",
-    "leadManager": "Finshore Management Services Limited",
-    "registrar": "Integrated Registry Management Services Private Limited",
-    "qibPortion": null,
-    "niiPortion": "10,47,000 (47.48%)",
-    "riiPortion": "10,47,000 (47.48%)",
-    "anchorInvestorPortion": "1,11,000 (5.03%)",
-    "anchorBidDate": null,
-    "anchorPortionSize": null,
-    "anchorLockin30Days": null,
-    "anchorLockin90Days": null,
-    "about": "Incorporated in May 1972, Indobell Insulation Limited manufactures insulation products, including nodulated and granulated wool (mineral and ceramic fibre nodules) and prefabricated thermal insulation jackets. The company's products are used in residential, commercial, and industrial applications alongside various related insulation materials.",
-    "products": [
-      "Nodulated/Granulated Wool",
-      "Ceramic Fibres Nodules",
-      "Mineral Fibre Nodules",
-      "Pre-fabricated Thermal Insulation Jackets"
-    ],
-    "financials": {
-      "revenueFY24": null,
-      "revenueFY23": null,
-      "profitAfterTaxFY24": null,
-      "profitAfterTaxFY23": null
-    },
-    "gmp": null,
-    "subscriptionStatus": {
-      "categories": [
-        {
-          "investorCategory": "NII",
-          "subscriptionTimes": null,
-          "sharesOffered": "10,47,000",
-          "sharesBidFor": null,
-          "totalAmountCr": null,
-          "totalApplications": null
-        },
-        {
-          "investorCategory": "Retail",
-          "subscriptionTimes": null,
-          "sharesOffered": "10,47,000",
-          "sharesBidFor": null,
-          "totalAmountCr": null,
-          "totalApplications": null
-        },
-        {
-          "investorCategory": "Total",
-          "subscriptionTimes": null,
-          "sharesOffered": "22,05,001",
-          "sharesBidFor": null,
-          "totalAmountCr": null,
-          "totalApplications": null
-        }
-      ]
-    }
-  },
-  {
-    "name": "Fabtech Technologies IPO",
-    "issueSize": "27.74 Cr",
-    "freshIssueShares": "32.64 lakh shares",
-    "ipoOpenDate": "January 3, 2025",
-    "ipoCloseDate": "January 7, 2025",
-    "allotmentDate": "January 8, 2025",
-    "listingDate": "January 10, 2025",
-    "listingAt": "BSE SME",
-    "priceBand": "₹80 to ₹85 ",
-    "faceValue": "₹10 ",
-    "lotSize": 1600,
-    "minimumInvestmentRetail": "₹1,36,000",
-    "minimumInvestmentHNI": "₹2,72,000 (2 lots/3,200 shares)",
-    "issueType": "Book Built Issue IPO",
-    "totalSharesOffered": "32,64,000 shares",
-    "freshIssueAmount": "₹27.74 Crore",
-    "preIssueShareHolding": "90,55,362 shares",
-    "postIssueShareHolding": "1,23,19,362 shares",
-    "promoters": ["Aasif Ahsan Khan", "Aarif Ahsan Khan", "Hemant Mohan Anavkar", "Manisha Hemant Anavkar"],
-    "preIssuePromoterHolding": "93.07%",
-    "postIssuePromoterHolding": null,
-    "marketMaker": "Rikhav Securities Limited",
-    "marketMakerPortion": "1,64,800 shares",
-    "leadManager": "Vivro Financial Services Private Limited",
-    "registrar": "Maashitla Securities Private Limited",
-    "qibPortion": "6,19,200 (18.97%)",
-    "niiPortion": "4,65,600 (14.26%)",
-    "riiPortion": "10,86,400 (33.28%)",
-    "anchorInvestorPortion": "9,28,000 (28.43%)",
-    "anchorBidDate": "January 2, 2025",
-    "anchorPortionSize": "₹7.89 Crore",
-    "anchorLockin30Days": "February 7, 2025",
-    "anchorLockin90Days": "April 8, 2025",
-    "about": "Fabtech Technologies Cleanrooms Limited manufactures pre-engineered and pre-fabricated modular panels and doors for building cleanrooms in the pharmaceutical, healthcare, and biotech sectors. The company is an end-to-end supplier of cleanroom products and technology.",
-    "financials": {
-      "revenueFY24": "₹6,222.89 Lakhs",
-      "revenueFY23": "₹9,799.26 Lakhs",
-      "profitAfterTaxFY24": "₹540.18 Lakhs",
-      "profitAfterTaxFY23": "₹578.46 Lakhs"
-    },
-    "gmp": null,
-    "subscriptionStatus": {
-      "categories": [
-        {
-          "investorCategory": "NII",
-          "subscriptionTimes": "143.24",
-          "sharesOffered": "4,65,600",
-          "sharesBidFor": "6,66,94,400",
-          "totalAmountCr": null,
-          "totalApplications": "9,481"
-        },
-        {
-          "investorCategory": "Retail",
-          "subscriptionTimes": "230.01",
-          "sharesOffered": "10,86,400",
-          "sharesBidFor": "24,98,88,000",
-          "totalAmountCr": null,
-          "totalApplications": "1,56,202"
-        },
-        {
-          "investorCategory": "Total",
-          "subscriptionTimes": "147.08",
-          "sharesOffered": "32,64,000",
-          "sharesBidFor": "31,93,40,800",
-          "totalAmountCr": null,
-          "totalApplications": "2,22,050"
-        }
-      ]
-    }
-  },
-  {
-    "name": "Davin Sons IPO",
-    "issueSize": "8.78 Cr",
-    "freshIssueShares": "15.96 lakh shares",
-    "ipoOpenDate": "January 2, 2025",
-    "ipoCloseDate": "January 6, 2025",
-    "allotmentDate": "January 7, 2025",
-    "listingDate": "January 9, 2025",
-    "listingAt": "BSE SME",
-    "priceBand": "₹55 ",
-    "faceValue": "₹10 ",
-    "lotSize": 2000,
-    "minimumInvestmentRetail": "₹1,10,000",
-    "minimumInvestmentHNI": "₹2,20,000 (2 lots/4,000 shares)",
-    "issueType": "Fixed Price Issue",
-    "totalSharesOffered": "15,96,000 shares",
-    "freshIssueAmount": "₹8.78 Cr",
-    "preIssueShareHolding": "36,66,792 shares",
-    "postIssueShareHolding": "52,62,792 shares",
-    "promoters": ["Mr Mohit Arora", "Mr Nohit Arora", "Mr Davinder Arora", "Mrs Lalita Rani", "Mrs Sonam Arora"],
-    "preIssuePromoterHolding": "90.68%",
-    "postIssuePromoterHolding": "63.18%",
-    "marketMaker": "Aftertrade Broking Pvt Ltd",
-    "marketMakerPortion": "80,000 shares",
-    "leadManager": "Navigant Corporate Advisors Ltd",
-    "registrar": "Kfin Technologies Limited",
-    "qibPortion": null,
-    "niiPortion": "7,58,000 (47.49%)",
-    "riiPortion": "7,58,000 (47.49%)",
-    "anchorInvestorPortion": null,
-    "anchorBidDate": null,
-    "anchorPortionSize": null,
-    "anchorLockin30Days": null,
-    "anchorLockin90Days": null,
-    "about": "Incorporated in March 2022, Davin Sons Retail Limited manufactures and designs a wide range of high-quality readymade garments, including jeans, denim jackets, and shirts for other brands. The company also distributes FMCG products.",
-    "financials": {
-      "revenueFY24": "634.1 Lakhs",
-      "revenueFY23": "391.33 Lakhs",
-      "profitAfterTaxFY24": "73.59 Lakhs",
-      "profitAfterTaxFY23": "56.62 Lakhs"
-    },
-    "gmp": null,
-    "subscriptionStatus": {
-      "categories": [
-        {
-          "investorCategory": "NII",
-          "subscriptionTimes": "65.04",
-          "sharesOffered": "7,58,000",
-          "sharesBidFor": "4,92,98,000",
-          "totalAmountCr": null,
-          "totalApplications": "6,574"
-        },
-        {
-          "investorCategory": "Retail",
-          "subscriptionTimes": "155.87",
-          "sharesOffered": "7,58,000",
-          "sharesBidFor": "11,81,50,000",
-          "totalAmountCr": null,
-          "totalApplications": "59,075"
-        },
-        {
-          "investorCategory": "Total",
-          "subscriptionTimes": "115.81",
-          "sharesOffered": "15,96,001",
-          "sharesBidFor": "17,55,66,000",
-          "totalAmountCr": null,
-          "totalApplications": "78,735"
-        }
-      ]
-    }
-  },
-  {
-    "name": "Parmeshwar Metal IPO",
-    "issueSize": "24.74 Cr",
-    "freshIssueShares": "40.56 lakh shares",
-    "ipoOpenDate": "January 2, 2025",
-    "ipoCloseDate": "January 6, 2025",
-    "allotmentDate": "January 7, 2025",
-    "listingDate": "January 9, 2025",
-    "listingAt": "BSE SME",
-    "priceBand": "₹57 to ₹61 ",
-    "faceValue": "₹10 ",
-    "lotSize": 2000,
-    "minimumInvestmentRetail": "₹1,22,000",
-    "minimumInvestmentHNI": "₹2,44,000 (2 lots/4,000 shares)",
-    "issueType": "Book Built Issue",
-    "totalSharesOffered": "40,56,000 shares",
-    "freshIssueAmount": "₹24.74 Cr",
-    "preIssueShareHolding": "1,12,50,000 shares",
-    "postIssueShareHolding": "1,53,06,000 shares",
-    "promoters": [
-      "Mr Shantilal Kailashchandra Shah",
-      "Mr Suchitkumar Maheshbhai Patel",
-      "Mr Piyush Giriraj Shah",
-      "Mr Radheshayam Jankilal Shah",
-      "Mr Parth Maheshbhai Patel",
-      "Mr Pratik Radheshyam Shah",
-      "Mrs Kailashben Radheshyam Shah"
-    ],
-    "preIssuePromoterHolding": "96.33%",
-    "postIssuePromoterHolding": "70.81%",
-    "marketMaker": "Spread X Securities Private Limited",
-    "marketMakerPortion": "2,06,000 shares",
-    "leadManager": "Beeline Capital Advisors Pvt Ltd",
-    "registrar": "Link Intime India Private Ltd",
-    "qibPortion": "7,70,000 (18.98%)",
-    "niiPortion": "5,78,000 (14.25%)",
-    "riiPortion": "13,48,000 (33.23%)",
-    "anchorInvestorPortion": "11,54,000 (28.45%)",
-    "anchorBidDate": "January 1, 2025",
-    "anchorPortionSize": "Rs 7.04 crore",
-    "anchorLockin30Days": "January 8, 2025",
-    "anchorLockin90Days": "March 9, 2025",
-    "about": "Incorporated in August 2016, Parmeshwar Metal Limited manufactures copper wire and rods by recycling copper scrap. The company's manufacturing unit is situated in Dehgam, Gujarat. The company is an ISO 9001:2015 certified business offering a product portfolio of 1.6 mm, 8 mm, and 12.5 mm copper wire rods, each tailored to meet customer specifications. The company's products are used in various industries such as power cables, building wires, transformers, the automotive industry, household cables as well as bare and enamelled wires. As of December 31, 2023 the company employees a total 89 Employees.",
-    "financials": {
-      "revenueFY24": "1,10,246.35 Lakhs",
-      "revenueFY23": "97,270.61 Lakhs",
-      "profitAfterTaxFY24": "721.93 Lakhs",
-      "profitAfterTaxFY23": "889.53 Lakhs"
-    },
-    "gmp": "65.57",
-    "subscriptionStatus": {
-      "categories": [
-        {
-          "investorCategory": "Anchor Investors",
-          "subscriptionTimes": "1",
-          "sharesOffered": "11,54,000",
-          "sharesBidFor": "11,54,000",
-          "totalAmountCr": "7.04",
-          "totalApplications": null
-        },
-        {
-          "investorCategory": "Market Maker",
-          "subscriptionTimes": "1",
-          "sharesOffered": "2,06,000",
-          "sharesBidFor": "2,06,000",
-          "totalAmountCr": "1.26",
-          "totalApplications": null
-        },
-        {
-          "investorCategory": "Qualified Institutions",
-          "subscriptionTimes": "0.98",
-          "sharesOffered": "7,70,000",
-          "sharesBidFor": "7,54,000",
-          "totalAmountCr": "4.60",
-          "totalApplications": "5"
-        },
-        {
-          "investorCategory": "Non-Institutional Buyers",
-          "subscriptionTimes": "29.76",
-          "sharesOffered": "5,78,000",
-          "sharesBidFor": "1,72,00,000",
-          "totalAmountCr": "104.92",
-          "totalApplications": "2,681"
-        },
-        {
-          "investorCategory": "Retail Investors",
-          "subscriptionTimes": "76.86",
-          "sharesOffered": "13,48,000",
-          "sharesBidFor": "10,36,12,000",
-          "totalAmountCr": "632.03",
-          "totalApplications": "51,819"
-        },
-        {
-          "investorCategory": "Total",
-          "subscriptionTimes": "45.09",
-          "sharesOffered": "26,96,000",
-          "sharesBidFor": "12,15,66,000",
-          "totalAmountCr": "741.55",
-          "totalApplications": "70,185"
-        }
-      ]
-    }
   }
-]
+}

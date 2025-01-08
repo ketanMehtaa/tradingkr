@@ -8,17 +8,17 @@ import Link from 'next/link';
 const IPODashboard = () => {
   const mainIpo = mainBoardIpoData;
   const SmeIpo = smeData;
-  const sortedIpos = [...SmeIpo].sort((ipo1, ipo2) => {
-    const date1 = new Date(ipo1.ipoCloseDate);
-    const date2 = new Date(ipo2.ipoCloseDate);
+  // const sortedIpos = [...SmeIpo].sort((ipo1, ipo2) => {
+  //   const date1 = new Date(ipo1.ipoCloseDate);
+  //   const date2 = new Date(ipo2.ipoCloseDate);
 
-    // Handle invalid dates (important!)
-    if (isNaN(date1.getTime()) && isNaN(date2.getTime())) return 0; // Both invalid
-    if (isNaN(date1.getTime())) return 1; // date1 is invalid, put it at the end
-    if (isNaN(date2.getTime())) return -1; // date2 is invalid, put it at the end
+  //   // Handle invalid dates (important!)
+  //   if (isNaN(date1.getTime()) && isNaN(date2.getTime())) return 0; // Both invalid
+  //   if (isNaN(date1.getTime())) return 1; // date1 is invalid, put it at the end
+  //   if (isNaN(date2.getTime())) return -1; // date2 is invalid, put it at the end
 
-    return date2.getTime() - date1.getTime(); // Descending order: date2 - date1
-  });
+  //   return date2.getTime() - date1.getTime(); // Descending order: date2 - date1
+  // });
   const isIpoActive = (openDate: string, closeDate: string): boolean => {
     const now = new Date();
     const open = new Date(openDate);
@@ -34,7 +34,7 @@ const IPODashboard = () => {
 
       <Tabs defaultValue="Main Board" className="w-full">
         <TabsList className="mb-4">
-          <TabsTrigger value="Main Board">Main Board IPOs</TabsTrigger>
+          <TabsTrigger value="Main Board">Main</TabsTrigger>
           <TabsTrigger value="SME">Sme</TabsTrigger>
 
           {/* <TabsTrigger value="open">Open IPOs</TabsTrigger> */}
@@ -47,7 +47,7 @@ const IPODashboard = () => {
             <CardHeader>
               <CardTitle>Upcoming IPOs</CardTitle>
             </CardHeader>
-            <CardContent className="">
+            <CardContent>
               <div className="relative overflow-x-auto">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-gray-50">
@@ -61,7 +61,6 @@ const IPODashboard = () => {
                       <th scope="col" className="px-2 py-1 md:px-6 md:py-3 font-medium">
                         Lot Size
                       </th>
-
                       <th scope="col" className="px-2 py-1 md:px-6 md:py-3 font-medium">
                         Opens
                       </th>
@@ -80,28 +79,28 @@ const IPODashboard = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    {mainIpo.map((ipo) => (
-                      <tr key={ipo.name} className="bg-white border-b hover:bg-gray-50">
+                    {Object.values(mainIpo).map((ipo) => (
+                      <tr key={ipo.ipoName} className="bg-white border-b hover:bg-gray-50">
                         <td className="px-2 py-1 md:px-6 md:py-3 font-medium">
-                          <Link href={`/mainBoardIpo/${encodeURIComponent(ipo.name)}`}>
-                            <span className="cursor-pointer">{ipo.name}</span>
+                          <Link href={`/mainBoardIpo/${ipo.symbol}`}>
+                            <span className="cursor-pointer">{ipo.ipoName}</span>
                           </Link>
                         </td>
-                        <td className="px-2 py-1 md:px-6 md:py-3">{ipo.priceBand}</td>
-                        <td className="px-2 py-1 md:px-6 md:py-3">{ipo.lotSize}</td>
-                        <td className="px-2 py-1 md:px-6 md:py-3">{ipo.ipoOpenDate}</td>
+                        <td className="px-2 py-1 md:px-6 md:py-3">{ipo.pricing.priceBand}</td>
+                        <td className="px-2 py-1 md:px-6 md:py-3">{ipo.pricing.lotSize}</td>
+                        <td className="px-2 py-1 md:px-6 md:py-3">{ipo.timeline.ipoOpenDate}</td>
                         <td
                           className={`px-2 py-1 md:px-6 md:py-3 ${
-                            isIpoActive(ipo.ipoOpenDate, ipo.ipoCloseDate) ? 'bg-green-300 ' : ''
+                            isIpoActive(ipo.timeline.ipoOpenDate, ipo.timeline.ipoCloseDate) ? 'bg-green-300 ' : ''
                           }`}
                         >
-                          {ipo.ipoCloseDate}
+                          {ipo.timeline.ipoCloseDate}
                         </td>
                         <td className="px-2 py-1 md:px-6 md:py-3">{ipo.gmp || '-'}</td>
                         <td className="px-2 py-1 md:px-6 md:py-3">
-                          {ipo.subscriptionStatus?.total.subscriptionTimes}x
+                          {ipo.subscriptionStatus?.total?.subscriptionTimes || '-'}x
                         </td>
-                        <td className="px-2 py-1 md:px-6 md:py-3">{ipo.issueSize}</td>
+                        <td className="px-2 py-1 md:px-6 md:py-3">{ipo.financials.issueSize}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -111,7 +110,7 @@ const IPODashboard = () => {
           </Card>
         </TabsContent>
 
-        <TabsContent value="SME">
+        {/* <TabsContent value="SME">
           <Card>
             <CardHeader>
               <CardTitle>Upcoming IPOs</CardTitle>
@@ -184,7 +183,7 @@ const IPODashboard = () => {
               </div>
             </CardContent>
           </Card>
-        </TabsContent>
+        </TabsContent> */}
 
         <TabsContent value="open">
           <Card>

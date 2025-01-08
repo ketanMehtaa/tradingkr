@@ -64,7 +64,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <CSPostHogProvider>
-        <body className={cn('min-h-screen bg-background font-sans antialiased', fontSans.variable)}>
+        {/* // removed bg-background from below which can affect theme light dark //todokk */}
+        <body className={cn('min-h-screen  font-sans antialiased bg-[#EBEFF5]', fontSans.variable)}>
           {/*  changed defauiltTheme from system to light todokm */}
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
             <Header />
