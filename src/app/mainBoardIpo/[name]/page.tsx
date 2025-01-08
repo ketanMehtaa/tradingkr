@@ -3,7 +3,7 @@ import React from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'; // Replace with your actual UI library
 import ipoData from '../../mainBoardIpo.json'; // Update path if needed
 import { IPOData } from '@/app/mainIpoInterface';
-import ShareButtons from '@/app/socialShare';
+import ShareButtons from '@/app/share';
 
 const IPOComponent = ({ params }: { params: { name: string } }) => {
   const { name } = params;
@@ -37,12 +37,12 @@ const IPOComponent = ({ params }: { params: { name: string } }) => {
   const renderTable = (data: Record<string, any>, rowClasses: Record<string, string> = {}) => (
     <div className="overflow-x-auto">
       <table className="w-full table-fixed text-sm text-left">
-        <thead className="text-xs uppercase bg-gray-100">
+        {/* <thead className="text-xs uppercase bg-gray-100">
           <tr>
             <th className="w-1/2 py-2 px-4 font-medium">Field</th>
             <th className="w-1/2 py-2 px-4 font-medium">Value</th>
           </tr>
-        </thead>
+        </thead> */}
         <tbody>
           {Object.entries(data).map(([key, value], index) => (
             <tr key={key} className={`border-b ${rowClasses[key] || ''}`}>
@@ -60,7 +60,7 @@ const IPOComponent = ({ params }: { params: { name: string } }) => {
       <h1 className="text-3xl font-bold mb-4">{ipo.ipoName}</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
-        <div className="fixed bottom-5 left-1/2 -translate-x-1/2 bg-white p-4 rounded-lg shadow-md z-50">
+        <div className="fixed bottom-5 left-1/2 -translate-x-1/2  p-4 rounded-lg  z-50">
           <ShareButtons />
         </div>
         {/*------------------------------------------------------------- Basic Details */}
