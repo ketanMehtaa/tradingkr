@@ -1,10 +1,10 @@
 {
   "SGLTL": {
-    "symbol":"SGLTL",
+    "symbol": "SGLTL",
     "companyName": "Standard Glass Lining Technology Limited",
     "ipoName": "Standard Glass Lining Technology Limited IPO",
     "about": "Incorporated in September 2012, Standard Glass Lining Technology Limited is a manufacturer of engineering equipment for the pharmaceutical and chemical sectors in India. The company has the capability to manage the entire production process in-house.  They provide turnkey solutions, including design, engineering, manufacturing, assembly, installation, and standard operating procedures for pharmaceutical and chemical manufacturers.  Their product portfolio includes Reaction Systems, Storage, Separation, and Drying Systems.",
-    "gmp": "68.57%",
+    "gmp": "₹231 (65%)",
     "financials": {
       "issueSize": "410.05",
       "freshIssue": {
@@ -50,7 +50,7 @@
         "roce": "25.49%",
         "debtEquity": "0.32",
         "ronw": "20.74%",
-        "patMargin": "10.92",
+        "patMargin": "10.92%",
         "priceToBookValue": "5.70",
         "eps": {
           "preIPO": 3.25,
@@ -63,7 +63,6 @@
       },
       "marketCap": "Rs 2792.88 Cr"
     },
-
     "timeline": {
       "ipoOpenDate": "2025-01-06",
       "ipoCloseDate": "2025-01-08",
@@ -72,11 +71,11 @@
       "refundsInitiationDate": "2025-01-10",
       "creditOfSharesToDemat": "2025-01-10"
     },
-
     "listing": {
       "exchanges": ["NSE", "BSE"]
     },
     "pricing": {
+      
       "priceBand": "₹133 to ₹140 per share",
       "faceValue": "₹10 per share",
       "lotSize": 107,
@@ -84,8 +83,7 @@
         "retail": "₹14,980",
         "sNII": "₹2,09,720",
         "bNII": "₹10,03,660"
-      },
-      "listingAt": "NSE, BSE"
+      }
     },
     "shareDetails": {
       "totalSharesOffered": "2,92,89,367 shares",
@@ -115,7 +113,7 @@
     ],
     "promoterHolding": {
       "preIssue": "72.49%",
-      "postIssue": null
+      "postIssue": ""
     },
     "upiMandateCutoff": "5 PM on January 8, 2025",
     "management": {
@@ -124,10 +122,10 @@
     },
     "ipoObjectives": [
       "Funding of capital expenditure requirements for purchase of machinery and equipment.",
-      "Repayment/prepayment of certain outstanding borrowings and investment in S2 Engineering Industry Private Limited for similar borrowings repayment.",
-      "Investment in S2 Engineering Industry Private Limited for capital expenditure.",
-      "Funding inorganic growth via investments and/or acquisitions.",
-      "General corporate purposes."
+      "Repayment or prepayment, in full or in part, of all or a portion of certain outstanding borrowings availed by the Company and investment in the wholly owned Material Subsidiary, S2 Engineering Industry Private Limited, for repayment or prepayment, in full or in part, of all or a portion of certain outstanding borrowings availed by S2 Engineering Industry Private Limited, from banks and financial institutions",
+      "Investment in the wholly owned Material Subsidiary, S2 Engineering Industry Private Limited, for funding its capital expenditure requirements towards purchase of machinery and equipment",
+      "Funding inorganic growth through strategic investments and/or acquisitions and",
+      "General corporate purposes"
     ],
     "lotSizeDetails": {
       "retailMin": {
@@ -160,7 +158,7 @@
       "company": {
         "name": "Standard Glass Lining Technology Limited",
         "address": "10th Floor, PNR High Nest, Hydernagar, KPHB Colony, Hyderabad-500085",
-        "phone": "+91 40 3518 2204",
+        "phone": "+040 3518 2204",
         "email": "corporate@standardglr.com",
         "website": "https://www.standardglr.com/"
       },
@@ -178,35 +176,403 @@
     },
     "subscriptionStatus": {
       "qib": {
-        "subscriptionTimes": 168.83,
+        "subscriptionTimes": 185.48,
         "sharesOffered": 5857875,
-        "sharesBidFor": 988963015
+        "sharesBidFor": 1919991629
       },
       "nii": {
-        "subscriptionTimes": 242.65,
+        "subscriptionTimes": 275.21,
         "sharesOffered": 4393405,
-        "sharesBidFor": 1066047099
+        "sharesBidFor": 1209109951
       },
       "bNII": {
-        "subscriptionTimes": 266.98,
+        "subscriptionTimes": 302.21,
         "sharesOffered": 2928937,
-        "sharesBidFor": 781976972
+        "sharesBidFor": 885148512
       },
       "sNII": {
-        "subscriptionTimes": 193.97,
+        "subscriptionTimes": 221.21,
         "sharesOffered": 1464468,
-        "sharesBidFor": 284070127
+        "sharesBidFor": 323961439
       },
       "retail": {
-        "subscriptionTimes": 57.78,
+        "subscriptionTimes": 65.71,
         "sharesOffered": 10251278,
-        "sharesBidFor": 592341407
+        "sharesBidFor": 673654452
       },
       "total": {
-        "subscriptionTimes": 129.12,
+        "subscriptionTimes": 185.48,
         "sharesOffered": 20502558,
-        "sharesBidFor": 2647351521,
-        "totalApplications": 4804823
+        "sharesBidFor": 3802756032,
+        "totalApplications": 5239243
+      }
+    }
+  },
+  "CITIL": {
+    "symbol": "CITIL",
+    "companyName": "Capital Infra Trust",
+    "ipoName": "Capital Infra Trust InvIT",
+    "about": "Established in September 2023, Capital Infra Trust is an infrastructure investment trust sponsored by Gawar Construction Limited. The InvIT was established to engage in activities and make investments as an infrastructure investment trust, as allowed under the SEBI InvIT Regulations. The sponsoring company specializes in constructing road and highway projects across 19 states in India for various government bodies, including the NHAI, MORTH, MMRDA, and CPWD.",
+    "gmp": "",
+    "financials": {
+      "issueSize": "1578.00",
+      "freshIssue": {
+        "shares": "10,77,00,000 shares",
+        "amount": "1077.00 Cr"
+      },
+      "offerForSale": {
+        "shares": "5,01,00,000 shares",
+        "amount": "501.00 Cr"
+      },
+      "financialsByDate": [
+        {
+          "date": "30 Sep 2024",
+          "assets": 4905.26,
+          "revenue": 792.27,
+          "profitAfterTax": 115.43
+        },
+        {
+          "date": "31 Mar 2024",
+          "assets": 4724.07,
+          "revenue": 1543.51,
+          "profitAfterTax": 125.77
+        },
+        {
+          "date": "31 Mar 2023",
+          "assets": 4283.33,
+          "revenue": 2518.92,
+          "profitAfterTax": 497.19
+        },
+        {
+          "date": "31 Mar 2022",
+          "assets": 2502.8,
+          "revenue": 1981.42,
+          "profitAfterTax": 125.56
+        }
+      ]
+    },
+    "timeline": {
+      "ipoOpenDate": "2025-01-07",
+      "ipoCloseDate": "2025-01-09",
+      "allotmentDate": "2025-01-10",
+      "listingDate": "2025-01-14",
+      "refundsInitiationDate": "2025-01-13",
+      "creditOfSharesToDemat": "2025-01-13"
+    },
+    "listing": {
+      "exchanges": ["BSE", "NSE"]
+    },
+    "pricing": {
+      "priceBand": "₹99 to ₹100 per share",
+      "faceValue": "",
+      "lotSize": 150,
+      "minimumInvestment": {
+        "retail": "₹15,000",
+        "sNII": "₹2,10,000",
+        "bNII": "₹10,05,000"
+      }
+    },
+    "shareDetails": {
+      "totalIssueSize": "15,78,00,000 shares",
+      "issueType": "Book Built Issue InvIT"
+    },
+    "reservation": {
+      "qib": "Not more than 75% of the Offer",
+      "nii": "Not less than 25% of the Offer"
+    },
+    "anchorInvestmentDetails": {
+      "bidDate": "January 6, 2025",
+      "amount": "710.10 Cr",
+      "anchorLockin30Days": "Feb 9, 2025",
+      "anchorLockin90Days": "April 10, 2025"
+    },
+    "management": {
+      "leadManagers": ["SBI Capital Markets Limited", "HDFC Bank Limited"],
+      "registrar": "Kfin Technologies Limited"
+    },
+    "ipoObjectives": [
+      "Providing loans to the Project SPVs for repayment/pre-payment of external borrowings.",
+      "Providing loans to the Project SPVs for repayment of unsecured loans availed by the Project SPVs from the Sponsor."
+    ],
+    "lotSizeDetails": {
+      "retailMin": {
+        "lots": 1,
+        "shares": 150,
+        "amount": "₹15,000"
+      },
+      "retailMax": {
+        "lots": 13,
+        "shares": 1950,
+        "amount": "₹1,95,000"
+      },
+      "SHNIMin": {
+        "lots": 14,
+        "shares": 2100,
+        "amount": "₹2,10,000"
+      },
+      "SHNIMax": {
+        "lots": 66,
+        "shares": 9900,
+        "amount": "₹9,90,000"
+      },
+      "BHNIMin": {
+        "lots": 67,
+        "shares": 10050,
+        "amount": "₹10,05,000"
+      }
+    },
+    "contactDetails": {
+      "company": {
+        "name": "Capital Infra Trust",
+        "address": "Unit No. 1401-1403, 14th Floor, Tower B, SAS Tower, Medicity, Sector-38-Gurugram-122001",
+        "phone": "+0124 4920139",
+        "email": "compliance@capitalinfratrust.com",
+        "website": "https://www.capitalinfratrust.com/"
+      },
+      "registrar": {
+        "name": "Kfin Technologies Limited",
+        "phone": ["04067162222", "04079611000"],
+        "email": "nationalinfra.units@kfintech.com",
+        "website": "https://kosmic.kfintech.com/ipostatus/"
+      }
+    },
+    "brokerRecommendations": {
+      "subscribe": 3,
+      "neutral": 0,
+      "avoid": 0
+    },
+    "subscriptionStatus": {
+      "qib": {
+        "subscriptionTimes": 0,
+        "sharesOffered": 0,
+        "sharesBidFor": 0
+      },
+      "nii": {
+        "subscriptionTimes": 0,
+        "sharesOffered": 0,
+        "sharesBidFor": 0
+      },
+      "bNII": {
+        "subscriptionTimes": 0,
+        "sharesOffered": 0,
+        "sharesBidFor": 0
+      },
+      "sNII": {
+        "subscriptionTimes": 0,
+        "sharesOffered": 0,
+        "sharesBidFor": 0
+      },
+      "retail": {
+        "subscriptionTimes": 0,
+        "sharesOffered": 0,
+        "sharesBidFor": 0
+      },
+      "total": {
+        "subscriptionTimes": 0,
+        "sharesOffered": 0,
+        "sharesBidFor": 0,
+        "totalApplications": 0
+      }
+    }
+  },
+  "QFTL": {
+    "symbol": "QFTL",
+    "companyName": "Quadrant Future Tek Limited",
+    "ipoName": "Quadrant Future Tek Limited IPO",
+    "about": "Quadrant Future Tek Limited, incorporated in September 2015, develops next-generation Train Control and Signaling Systems for the Indian Railways' KAVACH project, enhancing safety and reliability for passengers. The company also has a speciality cable manufacturing facility with an Electron Beam Irradiation Centre.",
+    "gmp": "₹500 (72.41%)",
+    "financials": {
+      "issueSize": "290.00",
+      "freshIssue": {
+        "shares": "1,00,00,000 shares",
+        "amount": "290.00"
+      },
+      "financialsByDate": [
+        {
+          "date": "30 Sep 2024",
+          "assets": 149.66,
+          "revenue": 65.14,
+          "profitAfterTax": -12.11
+        },
+        {
+          "date": "31 Mar 2024",
+          "assets": 142.82,
+          "revenue": 151.82,
+          "profitAfterTax": 14.71
+        },
+        {
+          "date": "31 Mar 2023",
+          "assets": 118.82,
+          "revenue": 152.95,
+          "profitAfterTax": 13.9
+        },
+        {
+          "date": "31 Mar 2022",
+          "assets": 112.77,
+          "revenue": 104.29,
+          "profitAfterTax": 1.94
+        }
+      ],
+      "keyPerformanceIndicators": {
+        "roe": "33.41%",
+        "roce": "26.12%",
+        "debtEquity": "1.86",
+        "ronw": "33.41%",
+        "patMargin": "9.68%",
+        "priceToBookValue": "19.73",
+        "eps": {
+          "preIPO": 4.9,
+          "postIPO": -6.05
+        },
+        "pe": {
+          "preIPO": 59.13,
+          "postIPO": -47.91
+        }
+      },
+      "marketCap": "Rs 1160.00 Cr"
+    },
+    "timeline": {
+      "ipoOpenDate": "2025-01-07",
+      "ipoCloseDate": "2025-01-09",
+      "allotmentDate": "2025-01-10",
+      "listingDate": "2025-01-14",
+      "refundsInitiationDate": "2025-01-13",
+      "creditOfSharesToDemat": "2025-01-13"
+    },
+    "listing": {
+      "exchanges": ["BSE", "NSE"]
+    },
+    "pricing": {
+      "priceBand": "₹275 to ₹290 per share",
+      "faceValue": "₹10 per share",
+      "lotSize": 50,
+      "minimumInvestment": {
+        "retail": "₹14,500",
+        "sNII": "₹2,03,000",
+        "bNII": "₹10,00,500"
+      }
+    },
+    "shareDetails": {
+      "preIssueShareHolding": "3,00,00,000 shares",
+      "postIssueShareHolding": "4,00,00,000 shares",
+      "issueType": "Book Built Issue IPO"
+    },
+    "reservation": {
+      "qib": "30,00,000 (30%)",
+      "nii": "15,00,000 (15%)",
+      "rii": "10,00,000 (10%)",
+      "anchorInvestors": "45,00,000 (45%)"
+    },
+    "anchorInvestmentDetails": {
+      "bidDate": "January 6, 2025",
+      "amount": "130.50 Cr",
+      "anchorLockin30Days": "February 9, 2025",
+      "anchorLockin90Days": "April 10, 2025"
+    },
+    "promoters": [
+      "Mohit Vohra",
+      "Amit Dhawan",
+      "Amrit Singh Randhawa",
+      "Rupinder Singh",
+      "Vishesh Abrol",
+      "Vivek Abrol",
+      "Aikjot Singh",
+      "Rajbir Singh Randhawa"
+    ],
+    "promoterHolding": {
+      "preIssue": "93.33%",
+      "postIssue": "70%"
+    },
+    "upiMandateCutoff": "5 PM on January 9, 2025",
+
+    "management": {
+      "leadManagers": ["Sundae Capital Advisors"],
+      "registrar": "Link Intime India Private Ltd"
+    },
+    "ipoObjectives": [
+      "Funding long-term working capital requirements.",
+      "Capital expenditure for development of Electronic Interlocking System.",
+      "Prepayment/repayment of outstanding working capital term loan.",
+      "General corporate purposes."
+    ],
+    "lotSizeDetails": {
+      "retailMin": {
+        "lots": 1,
+        "shares": 50,
+        "amount": "₹14,500"
+      },
+      "retailMax": {
+        "lots": 13,
+        "shares": 650,
+        "amount": "₹1,88,500"
+      },
+      "SHNIMin": {
+        "lots": 14,
+        "shares": 700,
+        "amount": "₹2,03,000"
+      },
+      "SHNIMax": {
+        "lots": 68,
+        "shares": 3400,
+        "amount": "₹9,86,000"
+      },
+      "BHNIMin": {
+        "lots": 69,
+        "shares": 3450,
+        "amount": "₹10,00,500"
+      }
+    },
+    "contactDetails": {
+      "company": {
+        "name": "Quadrant Future Tek Limited",
+        "address": "Village Basma Tehsil Banur, Distt Mohali - 140417",
+        "phone": "+91 172 402 0228",
+        "email": "cs_qftl@quadrantfuturetek.com",
+        "website": "https://www.quadrantfuturetek.com/"
+      },
+      "registrar": {
+        "name": "Link Intime India Private Ltd",
+        "phone": "+91-22-4918 6270",
+        "email": "quadrant.ipo@linkintime.co.in",
+        "website": "https://linkintime.co.in/Initial_Offer/public-issues.html"
+      }
+    },
+    "brokerRecommendations": {
+      "subscribe": 11,
+      "neutral": 0,
+      "avoid": 1
+    },
+    "subscriptionStatus": {
+      "qib": {
+        "subscriptionTimes": 0.48,
+        "sharesOffered": 3000000,
+        "sharesBidFor": 1453650
+      },
+      "nii": {
+        "subscriptionTimes": 92.08,
+        "sharesOffered": 1500000,
+        "sharesBidFor": 138121350
+      },
+      "bNII": {
+        "subscriptionTimes": 82.53,
+        "sharesOffered": 1000000,
+        "sharesBidFor": 82532650
+      },
+      "sNII": {
+        "subscriptionTimes": 111.18,
+        "sharesOffered": 500000,
+        "sharesBidFor": 55588700
+      },
+      "retail": {
+        "subscriptionTimes": 145.42,
+        "sharesOffered": 1000000,
+        "sharesBidFor": 145417550
+      },
+      "total": {
+        "subscriptionTimes": 51.82,
+        "sharesOffered": 5500000,
+        "sharesBidFor": 284992550,
+        "totalApplications": 2692100
       }
     }
   }

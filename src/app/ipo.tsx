@@ -31,19 +31,17 @@ const IPODashboard = () => {
 
   return (
     <div className="container mx-auto ">
+      {/* <h1 className="text-2xl font-bold mb-2 px-4 pt-2"> IPO Dashboard</h1> */}
 
-      
-      <h1 className="text-2xl font-bold mb-2 px-4 pt-2"> IPO Dashboard</h1>
-
-      <Tabs defaultValue="Main Board" className="w-full">
-        <TabsList className="mb-4">
-          <TabsTrigger value="Main Board">Main</TabsTrigger>
-          <TabsTrigger value="SME">Sme</TabsTrigger>
+      <Tabs defaultValue="Main Board" className="w-full mt-2">
+        {/* <TabsList className="mb-4 ml-4"> */}
+          {/* <TabsTrigger value="Main Board">Main</TabsTrigger> */}
+          {/* <TabsTrigger value="SME">Sme</TabsTrigger> */}
 
           {/* <TabsTrigger value="open">Open IPOs</TabsTrigger> */}
           {/* <TabsTrigger value="closed">Closed IPOs</TabsTrigger> */}
           {/* <TabsTrigger value="performance">Performance</TabsTrigger> */}
-        </TabsList>
+        {/* </TabsList> */}
 
         <TabsContent value="Main Board">
           <Card>

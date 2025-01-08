@@ -10,7 +10,8 @@ const IPOComponent = ({ params }: { params: { name: string } }) => {
   // const decodedSymbol = decodeURIComponent(symbol);
 
   // Access the IPO data using the symbol as the key
-  const typedIPOData = ipoData as IPOData;
+  // todokk check what will the effect of unknown here below .
+  const typedIPOData = ipoData as unknown as IPOData;
   const ipo = typedIPOData[name];
   console.log('kkkkk', ipo);
   if (!ipo) {
@@ -57,7 +58,7 @@ const IPOComponent = ({ params }: { params: { name: string } }) => {
 
   return (
     <div className="container mx-auto px-4 py-8 ">
-      <h1 className="text-3xl font-bold mb-4">{ipo.ipoName}</h1>
+      <h1 className="text-xl font-bold mb-4 ml-4">{ipo.ipoName}</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
         <div className="fixed bottom-5 left-1/2 -translate-x-1/2  p-4 rounded-lg  z-50">
@@ -72,8 +73,8 @@ const IPOComponent = ({ params }: { params: { name: string } }) => {
             {renderTable(
               {
                 'Issue Size': ipo.financials.issueSize,
-                'Fresh Issue': `${ipo.financials.freshIssue.shares} (${ipo.financials.freshIssue.amount})`,
-                'Offer for Sale': `${ipo.financials.offerForSale.shares} (${ipo.financials.offerForSale.amount})`,
+                'Fresh Issue': `${ipo.financials.freshIssue.shares} (${ipo.financials.freshIssue?.amount})`,
+                'Offer for Sale': `${ipo?.financials?.offerForSale?.shares} (${ipo?.financials?.offerForSale?.amount})`,
                 'Price Band': ipo.pricing.priceBand,
                 Gmp: ipo.gmp,
                 'Lot Size': ipo.pricing.lotSize,
@@ -94,6 +95,16 @@ const IPOComponent = ({ params }: { params: { name: string } }) => {
         <Card className="mb-6 bg-white shadow-md rounded-lg ">
           <CardHeader>
             <CardTitle>Company Information</CardTitle>
+            <div>
+              <a
+                href={ipo.contactDetails.company.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-2 text-blue-500 hover:underline text-sm" // Add some styling
+              >
+                Visit Website
+              </a>
+            </div>
           </CardHeader>
           <CardContent className="space-y-4">
             <div>
@@ -105,21 +116,21 @@ const IPOComponent = ({ params }: { params: { name: string } }) => {
         {/*------------------------------------------------------------- Key Performance Indicators */}
         <Card className="mb-6 bg-white shadow-md rounded-lg ">
           <CardHeader>
-            <CardTitle>Key Performance Indicators</CardTitle>
+            <CardTitle>Key Performance</CardTitle>
           </CardHeader>
           <CardContent>
             {renderTable(
               {
-                ROE: ipo.financials.keyPerformanceIndicators.roe,
-                ROCE: ipo.financials.keyPerformanceIndicators.roce,
-                'Debt/Equity': ipo.financials.keyPerformanceIndicators.debtEquity,
-                RONW: ipo.financials.keyPerformanceIndicators.ronw,
-                'PAT Margin': ipo.financials.keyPerformanceIndicators.patMargin,
-                'Price to Book Value': ipo.financials.keyPerformanceIndicators.priceToBookValue,
-                'EPS (Pre-IPO)': ipo.financials.keyPerformanceIndicators.eps.preIPO,
-                'EPS (Post-IPO)': ipo.financials.keyPerformanceIndicators.eps.postIPO,
-                'P/E (Pre-IPO)': ipo.financials.keyPerformanceIndicators.pe.preIPO,
-                'P/E (Post-IPO)': ipo.financials.keyPerformanceIndicators.pe.postIPO,
+                ROE: ipo.financials.keyPerformanceIndicators?.roe,
+                ROCE: ipo.financials.keyPerformanceIndicators?.roce,
+                'Debt/Equity': ipo.financials.keyPerformanceIndicators?.debtEquity,
+                RONW: ipo.financials.keyPerformanceIndicators?.ronw,
+                'PAT Margin': ipo.financials.keyPerformanceIndicators?.patMargin,
+                'Price to Book Value': ipo.financials.keyPerformanceIndicators?.priceToBookValue,
+                'EPS (Pre-IPO)': ipo.financials.keyPerformanceIndicators?.eps?.preIPO,
+                'EPS (Post-IPO)': ipo.financials.keyPerformanceIndicators?.eps?.postIPO,
+                'P/E (Pre-IPO)': ipo.financials.keyPerformanceIndicators?.pe?.preIPO,
+                'P/E (Post-IPO)': ipo.financials.keyPerformanceIndicators?.pe?.postIPO,
               },
               { 'P/E (Post-IPO)': 'bg-green-200' }
             )}
@@ -233,7 +244,7 @@ const IPOComponent = ({ params }: { params: { name: string } }) => {
                     ))}
                     {ipo.subscriptionStatus.total && (
                       <tr className="border-b font-medium">
-                        <td className="py-2 px-4 border-r">Total Applications</td>
+                        <td className="py-2 px-4 border-r text-xs">Total Applications</td>
                         <td className="py-2 px-4 text-right border-r"></td>
                         <td className="py-2 px-4 text-right border-r"></td>
                         <td className="py-2 px-4 text-right">{ipo.subscriptionStatus.total.totalApplications}</td>
@@ -246,7 +257,7 @@ const IPOComponent = ({ params }: { params: { name: string } }) => {
           </Card>
         )}
         {/*------------------------------------------------------------- Financial Data */}
-        <Card className="mb-6 bg-white shadow-md rounded-lg ">
+        {/* <Card className="mb-6 bg-white shadow-md rounded-lg ">
           <CardHeader>
             <CardTitle>Financial Data</CardTitle>
           </CardHeader>
@@ -256,10 +267,10 @@ const IPOComponent = ({ params }: { params: { name: string } }) => {
                 <thead className="text-xs uppercase bg-gray-100 border-b">
                   <tr>
                     <th className="py-2 px-4 font-medium border-r">Date</th>
-                    <th className="py-2 px-4 font-medium border-r text-right">Revenue (₹ Cr)</th>
-                    <th className="py-2 px-4 font-medium border-r text-right">Profit After Tax (₹ Cr)</th>
-                    <th className="py-2 px-4 font-medium border-r text-right">Net Worth (₹ Cr)</th>
-                    <th className="py-2 px-4 font-medium text-right">Total Borrowing (₹ Cr)</th>
+                    <th className="py-2 px-4 font-medium border-r text-right">Revenue </th>
+                    <th className="py-2 px-4 font-medium border-r text-right">PAT</th>
+                    <th className="py-2 px-4 font-medium border-r text-right">Net Worth </th>
+                    <th className="py-2 px-4 font-medium text-right">Total Borrowing</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -276,11 +287,11 @@ const IPOComponent = ({ params }: { params: { name: string } }) => {
               </table>
             </div>
           </CardContent>
-        </Card>
+        </Card> */}
 
         <Card className="mb-6 bg-white shadow-md rounded-lg ">
           <CardHeader>
-            <CardTitle>Financial Data</CardTitle>
+            <CardTitle>Financial Data(CR)</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="overflow-x-auto">
@@ -299,7 +310,7 @@ const IPOComponent = ({ params }: { params: { name: string } }) => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="py-2 px-4 font-medium border border-gray-300">Revenue (₹ Cr)</td>
+                    <td className="py-2 px-4 font-medium border border-gray-300">Revenue</td>
                     {ipo.financials.financialsByDate.map((data: any) => (
                       <td key={data.date} className="py-2 px-4 border border-gray-300 text-right">
                         {data.revenue.toFixed(2)}
@@ -307,7 +318,7 @@ const IPOComponent = ({ params }: { params: { name: string } }) => {
                     ))}
                   </tr>
                   <tr>
-                    <td className="py-2 px-4 font-medium border border-gray-300">Profit After Tax (₹ Cr)</td>
+                    <td className="py-2 px-4 font-medium border border-gray-300">PAT</td>
                     {ipo.financials.financialsByDate.map((data: any) => (
                       <td key={data.date} className="py-2 px-4 border border-gray-300 text-right">
                         {data.profitAfterTax.toFixed(2)}
@@ -315,18 +326,18 @@ const IPOComponent = ({ params }: { params: { name: string } }) => {
                     ))}
                   </tr>
                   <tr>
-                    <td className="py-2 px-4 font-medium border border-gray-300">Net Worth (₹ Cr)</td>
+                    <td className="py-2 px-4 font-medium border border-gray-300">Net Worth</td>
                     {ipo.financials.financialsByDate.map((data: any) => (
                       <td key={data.date} className="py-2 px-4 border border-gray-300 text-right">
-                        {data.netWorth.toFixed(2)}
+                        {data.netWorth?.toFixed(2)}
                       </td>
                     ))}
                   </tr>
                   <tr>
-                    <td className="py-2 px-4 font-medium border border-gray-300">Total Borrowing (₹ Cr)</td>
+                    <td className="py-2 px-4 font-medium border border-gray-300">Total Borrowing</td>
                     {ipo.financials.financialsByDate.map((data: any) => (
                       <td key={data.date} className="py-2 px-4 border border-gray-300 text-right">
-                        {data.totalBorrowing.toFixed(2)}
+                        {data.totalBorrowing?.toFixed(2)}
                       </td>
                     ))}
                   </tr>
@@ -360,7 +371,17 @@ const IPOComponent = ({ params }: { params: { name: string } }) => {
               {renderTable(ipo.contactDetails.company)}
             </div>
             <div className="mt-4">
-              <p className="font-medium">Registrar:</p>
+              <p className="font-medium">Registrar:
+              <a
+                href={ipo.contactDetails.registrar.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-2 text-blue-500 hover:underline text-sm" // Add some styling
+              >
+                Visit Website
+              </a>
+              </p>
+
               {renderTable(ipo.contactDetails.registrar)}
             </div>
           </CardContent>

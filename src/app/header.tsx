@@ -17,10 +17,10 @@ import { ContactForm } from './signUp';
 
 const navItems = [
   { title: 'Home', href: '/' },
-  { title: 'About', href: '' },
-  { title: 'Services', href: '' },
-  { title: 'Pricing', href: '' },
-  { title: 'Contact', href: '' },
+  // { title: 'About', href: '' },
+  // { title: 'Services', href: '' },
+  // { title: 'Pricing', href: '' },
+  // { title: 'Contact', href: '' },
 ];
 
 export function Header() {

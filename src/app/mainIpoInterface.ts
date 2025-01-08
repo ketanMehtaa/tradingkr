@@ -61,7 +61,7 @@ interface Pricing {
     faceValue: string;
     lotSize: number;
     minimumInvestment: MinimumInvestment;
-    listingAt: string;
+    listingAt?: string;
 }
 
 interface ShareDetails {
