@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import smeData from './sme.json';
 import mainBoardIpoData from './mainBoardIpo.json';
 import Link from 'next/link';
+import { ContactForm } from './signUp';
 
 const IPODashboard = () => {
   const mainIpo = mainBoardIpoData;
@@ -30,6 +31,8 @@ const IPODashboard = () => {
 
   return (
     <div className="container mx-auto ">
+
+      
       <h1 className="text-2xl font-bold mb-2 px-4 pt-2"> IPO Dashboard</h1>
 
       <Tabs defaultValue="Main Board" className="w-full">

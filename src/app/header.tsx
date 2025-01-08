@@ -13,6 +13,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from '@/components/ui/navigation-menu';
+import { ContactForm } from './signUp';
 
 const navItems = [
   { title: 'Home', href: '/' },
@@ -72,6 +73,9 @@ export function Header() {
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
           <div className="w-full flex-1 md:w-auto md:flex-none">
             <Button className="hidden md:inline-flex">Get Started</Button>
+                  {/* <GetStartedComponent /> */}
+                  {/* //todokk getstatedComponent in web giving prolem with alignment will do it later. */}
+
           </div>
         </div>
       </div>
@@ -80,6 +84,8 @@ export function Header() {
 }
 
 function MobileNav() {
+  const [isFormOpen, setIsFormOpen] = useState(false);
+
   return (
     <div className="flex flex-col space-y-3">
       <Link href="/" className="mb-4 flex items-center space-x-2">
@@ -90,7 +96,25 @@ function MobileNav() {
           {item.title}
         </Link>
       ))}
-      <Button className="mt-4">Get Started</Button>
+      {/* <Button className="mt-4">Get Started</Button> */}
+      <GetStartedComponent />
     </div>
   );
 }
+const GetStartedComponent = () => {
+  const [isFormOpen, setIsFormOpen] = useState(false);
+
+  return (
+    <div>
+      <Button onClick={() => setIsFormOpen(true)}>Get Started</Button>
+
+      {isFormOpen && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50">
+          {' '}
+          {/* Modal Overlay */}
+          <ContactForm isOpen={isFormOpen} onClose={() => setIsFormOpen(false)} />
+        </div>
+      )}
+    </div>
+  );
+};
