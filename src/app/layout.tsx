@@ -7,7 +7,7 @@ import { Header } from './header';
 import { Footer } from './footer';
 import { CSPostHogProvider } from './providers';
 import { Toaster } from '@/components/ui/toaster';
-
+import { Analytics } from "@vercel/analytics/react"
 const fontSans = FontSans({
   subsets: ['latin'],
   variable: '--font-sans',
@@ -63,6 +63,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Analytics/>
       <CSPostHogProvider>
         {/* // removed bg-background from below which can affect theme light dark //todokk */}
         <body className={cn('min-h-screen  font-sans antialiased bg-[#EBEFF5]', fontSans.variable)}>
