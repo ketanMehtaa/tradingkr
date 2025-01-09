@@ -1,0 +1,60 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Standard Glass IPO Allotment Status: How to Check Details Online via KFin Tech, NSE & BSE; Check Latest GMP",
+      "slug": "standard-glass-ipo-allotment-status",
+      "date": "2025-01-09",
+      "author": "amit kumar",
+      "image": "https://images.moneycontrol.com/static-mcnews/2025/01/20250109075339_Vishal-Mega-Mart.jpg?impolicy=website&width=770&height=431",
+      "summary": "Standard Glass IPO shares will be listed on the BSE and NSE on January 13. Investors who subscribed to the issue can check their allotment status on the official registrar's website.",
+      "content": "The Standard Glass IPO allotment is expected to be declared on January 9, 2025, following an overwhelming 183 times subscription on the final day of bidding. The IPO had a price band of Rs 133-140 per share. The initial share sale of Standard Glass Lining Technology Ltd raised Rs 410.05 crore, with bids for over 381 crore shares against 2.08 crore shares on offer. This resulted in a massive 183.18-times subscription. The issue was fully subscribed within minutes of opening, and Rs 123 crore was mobilized from anchor investors. Investors can check their allotment status through KFin Technologies, or on the official websites of NSE and BSE. To verify allotment status, investors must visit the registrar's website and enter their PAN, application number, or DP client ID. The shares of Standard Glass IPO are currently commanding a Grey Market Premium (GMP) of over 60%, indicating a potential listing gain of nearly 60.71%. The shares will be listed on the BSE and NSE on January 13, 2025.",
+      "categories": ["IPO", "Stock Market", "Investment", "NSE", "BSE"],
+      "steps_to_check_allotment": {
+        "kfin_tech": {
+          "title": "Check Allotment Status on KFin Technologies",
+          "steps": [
+            "Step 1: Open the direct link to the registrar at https://evault.kfintech.com/ipostatus/.",
+            "Step 2: Select 'Standard Glass Lining Technology' from the dropdown menu.",
+            "Step 3: Enter your details such as PAN, Application number, or DP client ID.",
+            "Step 4: Press 'Submit'.",
+            "Step 5: View the allotment status displayed on the window."
+          ]
+        },
+        "nse": {
+          "title": "Check Allotment Status on NSE",
+          "steps": [
+            "Step 1: Visit the official NSE website at https://www.nseindia.com/products/dynaContent/equities/ipos/ipo_login.jsp.",
+            "Step 2: Register using your details and click 'Submit'.",
+            "Step 3: Select 'Standard Glass Lining Technology' from the options.",
+            "Step 4: Enter your IPO Application number.",
+            "Step 5: Press 'Submit'.",
+            "Step 6: Check the allotment status displayed."
+          ]
+        },
+        "bse": {
+          "title": "Check Allotment Status on BSE",
+          "steps": [
+            "Step 1: Visit the BSE website (https://www.bseindia.com/).",
+            "Step 2: Navigate to 'Investors' and select 'Status of Issue Application'.",
+            "Step 3: Click on 'Application Status Check'.",
+            "Step 4: Choose 'Equity' in the issue type.",
+            "Step 5: Enter the 'Issue Name' (Standard Glass Lining Technology).",
+            "Step 6: Enter your PAN number and click 'Search'.",
+            "Step 7: View the allotment status."
+          ]
+        }
+      },
+      "links": {
+        "kfin_tech": "https://evault.kfintech.com/ipostatus/",
+        "nse": "https://www.nseindia.com/products/dynaContent/equities/ipos/ipo_login.jsp",
+        "bse": "https://www.bseindia.com/investors/appli_check.aspx"
+      },
+      "latest_gmp": {
+        "gmp_value": 85,
+        "gmp_percent": "60.71%",
+        "listing_date": "2025-01-13"
+      }
+    }
+  ]
+}

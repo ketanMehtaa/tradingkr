@@ -17,6 +17,7 @@ import { ContactForm } from './signUp';
 
 const navItems = [
   { title: 'Home', href: '/' },
+  { title: 'News', href: '/news' },
   // { title: 'About', href: '' },
   // { title: 'Services', href: '' },
   // { title: 'Pricing', href: '' },
