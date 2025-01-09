@@ -16,21 +16,24 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   title: 'TradingKR - Your Ultimate Trading Hub',
   description:
-    'TradingKR.com: Your single place for everything related to trading, including options, futures, equity options, charts, straddle charts, strangle charts, IPO details, top gainers, top losers, top news, and more.',
+    'TradingKR.com: Your single place for everything related to IPOs, trading, including options, futures, equity options, charts, straddle charts, strangle charts, IPO details, top gainers, top losers, top news, and more.',
   keywords: [
-    'trading',
-    'options',
-    'futures',
-    'equity options',
-    'charts',
-    'straddle charts',
-    'strangle charts',
+    'gmp',
+    'ipo gmp',
+    // 'trading',
+    // 'options',
+    // 'futures',
+    // 'equity options',
+    // 'charts',
+    // 'straddle charts',
+    // 'strangle charts',
     'IPO details',
     'IPO subscription',
-    'top gainers',
-    'top losers',
+    // 'top gainers',
+    // 'top losers',
+    'share news',
     'top news',
-    'trading platform',
+    // 'trading platform',
     'tradingKR',
   ],
   openGraph: {
@@ -54,6 +57,26 @@ export const metadata: Metadata = {
     creator: '@tradingkr',
     site: '@tradingkr',
   },
+  metadataBase: new URL('https://tradingkr.com'),
+    alternates: {
+        canonical: '/',
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            'max-video-preview': -1,
+            'max-image-preview': 'large',
+            'max-snippet': -1,
+        },
+    },
+    // verification: {
+    //     google: 'your-google-verification-code',
+    //     yandex: 'your-yandex-verification-code',
+    // }
+
 };
 
 export default function RootLayout({
